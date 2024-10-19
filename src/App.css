@@ -1,0 +1,17 @@
+/* Separate positioning and rotating transformations */
+.svg-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the circle */
+  animation: rotateBorder 10s linear infinite; /* Apply rotation separately */
+}
+
+@keyframes rotateBorder {
+  from {
+      transform: translate(-50%, -50%) rotate(0deg); /* Keep translate(-50%, -50%) to maintain centering */
+  }
+  to {
+      transform: translate(-50%, -50%) rotate(360deg); /* Rotate the circle */
+  }
+}
