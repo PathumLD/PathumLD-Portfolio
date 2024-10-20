@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <>
-      <div className="h-screen bg-slate-900 -z-20 flex flex-col items-center justify-start p-4">
+      <section id='about' className="h-screen bg-slate-900 -z-20 flex flex-col items-center justify-start p-4">
         {/* Sticky buttons at the top */}
         <div className="sticky top-10 z-10   w-full py-4 flex justify-center">
           <div className="flex my-8">
@@ -60,7 +60,7 @@ const About = () => {
         >
           {renderSection()}
         </div>
-      </div>
+      </section>
     </>
   );
 }
