@@ -17,10 +17,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='container flex items-center justify-center  md:mx-auto  max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl'>
-      <div className='bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-black border-opacity-20 rounded-full'>
+    <nav className='container  items-center justify-center  md:mx-auto  max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl'>
+      <div className='bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-black border-opacity-20 rounded-full mx-2'>
         <div className='py-4 mx-auto'>
-          <div className='flex justify-between items-center gap-60 md:gap-[40rem] mx-10'>
+          <div className='flex justify-between items-center mx-6'>
             {/* Logo and title */}
             <button onClick={toggleLogo}>
               <h1 className='font-bold text-2xl text-cyan-400'>PathumLD</h1>
@@ -75,7 +75,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isModalOpen && (
         <div className='sm:hidden' id='mobile-menu'>
-          <div className='bg-black bg-opacity-20 backdrop-filter backdrop-blur-xl rounded-3xl h-72 mt-4'>
+          <div className=' bg-black bg-opacity-20 backdrop-filter backdrop-blur-xl rounded-3xl z-50 h-72 mt-4'>
             <div className='px-2 pt-2 pb-3 text-center'>
               <div className='flex flex-col items-center space-y-4 mt-8 justify-center'>
                 <a href='#home' className='block px-3 py-2 rounded-md text-base font-medium text-cyan-400 hover:text-cyan-300 underline-animation'>

@@ -3,8 +3,9 @@ import Typewriter from 'typewriter-effect';
 import myImage from '../assets/img1.jpg'; // Your image
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { MdOutlineAlternateEmail } from "react-icons/md";
+import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 const Home = () => {
   const roles = ['SOFTWARE ENGINEER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER', 'FULLSTACK DEVELOPER', 'UI / UX DESIGNER', 'GRAPHIC DESIGNER'];
@@ -49,7 +50,7 @@ const Home = () => {
 
   return (
     <section id='home' className="h-screen flex items-center justify-center p-6 sm:p-12 md:p-20 bg-slate-950">
-      <div className="container max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-28 mt-20 ">
+      <div className="container max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-28 mt-8 md:mt-24 ">
         
         {/* Left Div: Profile Image */}
         <div className="flex justify-center md:justify-end relative left-div">
@@ -57,14 +58,14 @@ const Home = () => {
             {/* Responsive SVG Dotted Border */}
             <svg
               viewBox="0 0 200 200"
-              className="w-[calc(32vw+8px)] h-[calc(32vw+8px)] md:w-[calc(20vw+8px)] md:h-[calc(20vw+8px)] lg:w-[calc(24vw+8px)] lg:h-[calc(24vw+8px)] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 svg-border"
+              className="w-[calc(48vw+8px)] h-[calc(48vw+8px)] md:w-[calc(20vw+8px)] md:h-[calc(20vw+8px)] lg:w-[calc(24vw+8px)] lg:h-[calc(24vw+8px)] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 svg-border"
             >
               <circle 
                 cx="100" 
                 cy="100" 
                 r="104"  // radius slightly less than 100 to account for the 8px gap
                 fill="none" 
-                stroke="#00bca6" 
+                stroke="#22d3ee" 
                 strokeWidth="2" 
                 strokeDasharray="5, 30, 20, 15, 10, 20,  30, 5, 5, 10, 40, 25, 30, 10, 50 10" 
                 strokeLinecap="round" 
@@ -74,7 +75,7 @@ const Home = () => {
               <img 
                 src={myImage} 
                 alt="Profile" 
-                className="w-[32vw] h-[32vw] md:w-[20vw] md:h-[20vw] lg:w-[24vw] lg:h-[24vw] rounded-full mx-auto"
+                className="w-[48vw] h-[48vw] md:w-[20vw] md:h-[20vw] lg:w-[24vw] lg:h-[24vw] rounded-full mx-auto"
               />
             </div>
           </div>
@@ -107,19 +108,26 @@ const Home = () => {
               </span>
             </h2>
           </div>
-          <p className="text-sm md:text-xl mt-2 mx-12 md:mx-auto md:mt-8 text-justify text-white">Where logic meets creativity, I build digital dreams. My code paints, and my designs compute.</p>
+          <p className="text-sm md:text-xl mt-2 mx-2 md:mx-auto md:mt-8 text-justify text-white">Where logic meets creativity, I build digital dreams. My code paints, and my designs compute.</p>
           <div className='flex gap-4 items-center justify-center lg:justify-start mt-4'>
             <div className='mt-4 flex gap-4 text-xl text-white'>
               <a href="https://www.linkedin.com/in/pathumld/" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400 '><FaLinkedinIn /></a>
               <a href="https://github.com/PathumLD" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><FaGithub /></a>
-              <a href="mailto:pathumlk.diz@gmail.com" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><MdOutlineAlternateEmail /></a>
-              <a href="https://wa.me/+94767342605" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><FaWhatsapp /></a>
+              <a href="mailto:pathumlk.diz@gmail.com" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><AiOutlineMail /></a>
+              <a href="https://wa.me/+94729997763" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><FaWhatsapp /></a>
             </div>
-            <a href="/cv.pdf" download>
-              <button className="mt-4 px-4 py-2 btn-animate text-white rounded-3xl border hover:text-cyan-400 hover:border-cyan-400 shadow-lg transition duration-300">
-                Download CV
+            <a href="/cv/PathumDissanayake_SoftwareEngineer.pdf" download>
+              <button className="mt-4 py-1.5 px-3 btn-animate text-white rounded-3xl border hover:text-cyan-400 hover:border-cyan-400 shadow-lg transition duration-300">
+                {/* Display text on large screens */}
+                <span className="hidden lg:block">Download CV</span>
+                
+                {/* Display icon on mobile screens */}
+                <span className="block lg:hidden">
+                  <FaArrowDownLong />
+                </span>
               </button>
             </a>
+
           </div>
           
         </div>

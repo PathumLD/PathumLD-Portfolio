@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Footer from "./pages/Footer";
 import Home from "./pages/Home";
-import Project from "./pages/Project";
+import Projects from "./pages/Projects";
 import { FaArrowUp } from "react-icons/fa";
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       {/* Conditionally render Navbar based on scroll position */}
-      <div className={`fixed w-full mx-auto justify-center  top-10 z-10 transition-transform duration-500 ease-in-out 
+      <div className={`fixed w-full mx-auto justify-center  top-10 z-50 transition-transform duration-500 ease-in-out 
           ${showNavbar ? "translate-y-0" : "-translate-y-8"} 
           opacity-100`}
       >
@@ -52,7 +52,7 @@ function App() {
         <div id="about">
           <About />
         </div>
-        <Project />
+        <Projects />
         <Footer />
       </div>
 
