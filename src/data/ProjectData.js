@@ -2,92 +2,71 @@ export const projects = [
   {
     id: 1,
     coverImage: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
-    title: "Project One",
-    description: "This is a description of project one. This is a description of project one. This is a description of project one.",
-    techStack: ["React", "Node", "Tailwind CSS", "MongoDB"],
+    title: "TalentFolio",
+    description: "The Resume Management System streamlines candidate company interactions.",
+    techStack: ["React", "Node", "Tailwind CSS", "MongoDB", "Express"],
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com",
     category: "web apps"
   },
   {
     id: 2,
-    coverImage: "/path-to-your-image2.jpg",
-    title: "Project Two",
-    description: "This is a description of project two.",
-    techStack: ["Vue", "Node.js", "MongoDB"],
+    coverImage: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+    title: "MindTalk",
+    description: "Web application that acts as a portal for people with depression and counsellors to pave their way to a better mental health state.",
+    techStack: ["React", "Spring Boot", "Tailwind CSS", "PostgreSQL"],
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com",
-    category: "websites"
+    category: "web apps"
   },
   {
     id: 3,
-    coverImage: "/path-to-your-image3.jpg",
-    title: "Project Three",
-    description: "This is a description of project three.",
-    techStack: ["Figma", "Adobe XD"],
+    coverImage: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+    title: "Stadia",
+    description: "The application streamlines indoor stadium bookings, facilitating coordination between clients, coaches, managers, and suppliers.",
+    techStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com",
-    category: "ui designs"
+    category: "web apps"
   },
   {
     id: 4,
     coverImage: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
-    title: "Project One",
+    title: "BlogMe",
     description: "This is a description of project one. This is a description of project one. This is a description of project one.",
-    techStack: ["React", "Node", "Tailwind CSS", "MongoDB"],
+    techStack: ["React", "ASP.Net", "Tailwind CSS", "MS SQL"],
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com",
     category: "web apps"
   },
   {
     id: 5,
-    coverImage: "/path-to-your-image2.jpg",
-    title: "Project Two",
-    description: "This is a description of project two.",
-    techStack: ["Vue", "Node.js", "MongoDB"],
+    coverImage: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+    title: "Portfolio",
+    description: "•A portfolio website showcases the works, skills, and achievements, providing a professional online presence to impress potential employers or clients.",
+    techStack: ["React", "TailwindCSS"],
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com",
     category: "websites"
   },
   {
     id: 6,
-    coverImage: "/path-to-your-image3.jpg",
-    title: "Project Three",
-    description: "This is a description of project three.",
-    techStack: ["Figma", "Adobe XD"],
+    coverImage: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
+    title: "TalkyBudies",
+    description: "•A mobile application that allows users to register with their mobile numbers and chat with registered users.",
+    techStack: ["React Native", "Firebase"],
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com",
-    category: "ui designs"
+    category: "mobile apps"
   },
   {
     id: 7,
     coverImage: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
-    title: "Project One",
-    description: "This is a description of project one. This is a description of project one. This is a description of project one.",
-    techStack: ["React", "Node", "Tailwind CSS", "MongoDB"],
+    title: "Student Management System",
+    description: "Helps manage students, teachers, classrooms, and payments,improving education management and user experience.",
+    techStack: ["Java"],
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com",
     category: "web apps"
   },
-  {
-    id: 8,
-    coverImage: "/path-to-your-image2.jpg",
-    title: "Project Two",
-    description: "This is a description of project two.",
-    techStack: ["Vue", "Node.js", "MongoDB"],
-    githubLink: "https://github.com/your-repo",
-    demoLink: "https://your-demo.com",
-    category: "websites"
-  },
-  {
-    id: 9,
-    coverImage: "/path-to-your-image3.jpg",
-    title: "Project Three",
-    description: "This is a description of project three.",
-    techStack: ["Figma", "Adobe XD"],
-    githubLink: "https://github.com/your-repo",
-    demoLink: "https://your-demo.com",
-    category: "ui designs"
-  },
-  
 ];

@@ -30,14 +30,14 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
               </span>
             ))}
           </div>
-          <div className="flex justify-between ">
+          {/* <div className="flex justify-between ">
             <a href={githubLink} target="_blank" rel="noopener noreferrer" className="text-white  hover:text-cyan-500 font-bold  text-sm">
               GitHub
             </a>
             <a href={demoLink} target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 font-bold  text-sm">
               Demo
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

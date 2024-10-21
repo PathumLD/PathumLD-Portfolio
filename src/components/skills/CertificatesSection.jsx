@@ -10,12 +10,12 @@ const CertificatesSection = () => {
           <h3 className="text-cyan-400 text-lg">{certificate.name}</h3>
           <p className="text-white">Issuer: {certificate.issuer}</p>
           <p className="text-white">Date: {certificate.date}</p>
-          <button
+          <a
             href={certificate.link}
             target="_blank"
             className="text-cyan-400 underline mt-2 block">
             View Certificate
-          </button>
+          </a>
         </div>
       ))}
     </div>

@@ -27,7 +27,7 @@ const ContactInfo = () => {
             <div className="flex bottom-0 mt-2 -z-20 ">
                 <MapContainer
                 center={[7.330875817375049, 80.25506795300656]}
-                zoom={13}
+                zoom={12}
                 className="h-72 w-full rounded-lg">
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -6,9 +6,12 @@ const SkillsSection = () => {
       {skillsData.map((skill) => (
         <div
           key={skill.id}
-          className="bg-slate-800 w-28 h-28 hover:bg-slate-900  flex flex-col items-center justify-center rounded-lg shadow-md">
-          <img src={skill.logo} alt={skill.name} className="w-28 h-20 rounded-t-lg" />
-          <p className="my-1 text-cyan-400">{skill.name}</p>
+          className="relative w-28 h-28 bg-cover bg-center bg-white rounded-full shadow-md"
+          style={{ backgroundImage: `url(${skill.logo})` }}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-80 hover:border opacity-0 hover:opacity-100 flex items-center justify-center rounded-full transition-opacity duration-300">
+            <p className="text-white text-sm font-semibold">{skill.name}</p>
+          </div>
         </div>
       ))}
     </div>
