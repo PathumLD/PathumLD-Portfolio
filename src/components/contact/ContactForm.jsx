@@ -1,5 +1,7 @@
-import { useState, useRef} from 'react';
+import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,12 +18,14 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-//   const handleFileChange = (e) => {
-//     setFormData({ ...formData, attachment: e.target.files[0] });
-//   };
-
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Show submitting toast
+    toast.info('Submitting...', {
+      position: toast.POSITION.TOP_RIGHT,
+      autoClose: 3000, 
+    });
 
     emailjs
       .sendForm('service_yo1va4q', 'template_0kbg0gn', form.current, {
@@ -29,12 +33,19 @@ const ContactForm = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          toast.success('Email sent successfully!', {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 3000, 
+          });
         },
+        // eslint-disable-next-line no-unused-vars
         (error) => {
-          console.log('FAILED...', error.text);
+          toast.error('Failed to send email.', {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 3000, 
+          });
         },
-    );
+      );
 
     // Clear the form
     setFormData({
@@ -48,7 +59,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-full mt-16 mb-6 sm:w-1/2 p-6 bg-slate-950 text-white">
-        <h2 className='text-center text-3xl font-bold text-cyan-400 mb-4'>Contact Me</h2>
+      <h2 className="text-center text-3xl font-bold text-cyan-400 mb-4">Contact Me</h2>
       <form ref={form} onSubmit={sendEmail} className="space-y-4 border p-4 rounded-xl">
         <div>
           <label htmlFor="name" className="block mb-2">Name</label>
@@ -58,7 +69,7 @@ const ContactForm = () => {
             id="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder='Pathum Dissanayake'
+            placeholder="Pathum Dissanayake"
             className="w-full p-2 bg-slate-800 rounded text-white"
             required
           />
@@ -72,7 +83,7 @@ const ContactForm = () => {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder='pathumlk.diz@gmail.com'
+            placeholder="pathumlk.diz@gmail.com"
             className="w-full p-2 bg-slate-800 rounded text-white"
             required
           />
@@ -86,7 +97,7 @@ const ContactForm = () => {
             id="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder='+94767342605'
+            placeholder="+94767342605"
             className="w-full p-2 bg-slate-800 rounded text-white"
             required
           />
@@ -100,7 +111,7 @@ const ContactForm = () => {
             id="reason"
             value={formData.reason}
             onChange={handleChange}
-            placeholder='To create a portfolio website'
+            placeholder="To create a portfolio website"
             className="w-full p-2 bg-slate-800 rounded text-white"
             required
           />
@@ -113,7 +124,7 @@ const ContactForm = () => {
             id="description"
             value={formData.description}
             onChange={handleChange}
-            placeholder='Briefly explain what you need...'
+            placeholder="Briefly explain what you need..."
             className="w-full p-2 h-40 bg-slate-800 rounded text-white"
             required
           />
@@ -125,6 +136,9 @@ const ContactForm = () => {
           Submit
         </button>
       </form>
+
+      {/* Toast Container */}
+      <ToastContainer />
     </div>
   );
 };
