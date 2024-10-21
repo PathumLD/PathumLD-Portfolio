@@ -16,7 +16,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
       <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity group-hover:bg-opacity-80"></div>
       
       {/* Content */}
-      <div className="relative h-full flex flex-col justify-between p-6 text-white z-10">
+      <div className="relative h-full flex flex-col justify-between p-3 text-white z-10">
         <div>
           <h2 className="text-2xl font-bold mb-2">{title}</h2>
           <p className="text-sm  opacity-90">{description}</p>
@@ -25,7 +25,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
         <div>
           <div className="flex flex-wrap mb-2">
             {techStack.map((tech, index) => (
-              <span key={index} className="bg-white bg-opacity-20 text-white text-xs py-1 px-2 rounded-full mr-2 mb-2">
+              <span key={index} className="bg-white bg-opacity-20 text-white text-xs py-1 px-2 rounded-full mr-2 mb-1 ">
                 {tech}
               </span>
             ))}

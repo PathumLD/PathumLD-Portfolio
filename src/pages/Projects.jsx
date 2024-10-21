@@ -23,16 +23,10 @@ const Projects = () => {
     <section
       id="projects"
       className="bg-fixed bg-cover bg-slate-900 bg-center h-screen pt-6 md:pt-10 px-4 md:px-10 flex flex-col items-center justify-start"
-      style={{
-        backgroundImage: "url('/path-to-your-image.jpg')", // Change to your image path
-        backgroundAttachment: "fixed",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
     >
       {/* Sticky filter buttons for selecting categories */}
-      <div className="sticky top-16 md:top-10 z-10 w-full my-4 flex justify-center bg-transparent">
-        <div className="flex mt-12 md:mt-8  flex-wrap gap-2 md:gap-4">
+      <div className="sticky top-16 md:top-12 z-10 w-full my-4 flex justify-center bg-transparent">
+        <div className="flex mt-12 md:mt-8 text-white flex-wrap gap-2 md:gap-4">
           {filterCategories.map(category => (
             <button
               key={category}
@@ -49,10 +43,10 @@ const Projects = () => {
 
       {/* Scrollable project card list with smooth scrolling */}
       <div
-        className="w-full max-w-6xl h-[36rem] md:h-[60rem] my-4 overflow-y-auto scroll-smooth no-scrollbar p-4  rounded-lg"
+        className="w-full max-w-7xl h-[36rem] md:h-[60rem] my-4 overflow-y-auto scroll-smooth no-scrollbar p-4  rounded-lg"
       >
         <AnimatePresence>
-          <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+          <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-4">
             {filteredProjects.map(project => (
               <motion.div
                 key={project.id}

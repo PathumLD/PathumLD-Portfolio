@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-import Footer from "./pages/Footer";
+import Footer from "./pages/ContactMe";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { FaArrowUp } from "react-icons/fa";
+import Skills from "./pages/Skills";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -52,6 +53,7 @@ function App() {
         <div id="about">
           <About />
         </div>
+        <Skills />
         <Projects />
         <Footer />
       </div>

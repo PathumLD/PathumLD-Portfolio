@@ -25,9 +25,9 @@ const About = () => {
       <section id='about' className="h-screen bg-slate-900 -z-20 flex flex-col items-center justify-start p-4">
         {/* Sticky buttons at the top */}
         <div className="sticky top-10 z-10   w-full py-4 flex justify-center">
-          <div className="flex my-8">
+          <div className="flex my-8 text-white">
             <button
-              className={`mx-2 py-2 font-semibold px-3 rounded-full ${
+              className={`mx-2 py-2  px-3 rounded-full ${
                 activeSection === 'about' ? 'bg-cyan-500' : 'bg-white text-slate-900'
               }`}
               onClick={() => setActiveSection('about')}
@@ -35,7 +35,7 @@ const About = () => {
               About Me
             </button>
             <button
-              className={`mx-2 py-2 px-3 font-semibold rounded-full ${
+              className={`mx-2 py-2 px-3  rounded-full ${
                 activeSection === 'education' ? 'bg-cyan-500' : 'bg-white text-slate-900'
               }`}
               onClick={() => setActiveSection('education')}
@@ -43,7 +43,7 @@ const About = () => {
               Education
             </button>
             <button
-              className={`mx-2 py-2 px-3 font-semibold rounded-full ${
+              className={`mx-2 py-2 px-3  rounded-full ${
                 activeSection === 'experience' ? 'bg-cyan-500' : 'bg-white text-slate-900'
               }`}
               onClick={() => setActiveSection('experience')}
