@@ -113,7 +113,7 @@ const ContactForm = () => {
             id="description"
             value={formData.description}
             onChange={handleChange}
-            placeholder='Enter description'
+            placeholder='Briefly explain what you need...'
             className="w-full p-2 h-40 bg-slate-800 rounded text-white"
             required
           />
