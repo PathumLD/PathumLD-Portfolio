@@ -117,7 +117,7 @@ const Home = () => {
               <a href="https://wa.me/+94729997763" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><FaWhatsapp /></a>
             </div>
             <a href="/cv/PathumDissanayake_SoftwareEngineer.pdf" download>
-              <button className="mt-4 py-1.5 px-3 btn-animate text-white rounded-3xl border hover:text-cyan-400 hover:border-cyan-400 shadow-lg transition duration-300">
+              <button className="mt-4 px-2.5 py-2.5 md:px-3 md:py-1.5 btn-animate text-white rounded-3xl border hover:text-cyan-400 hover:border-cyan-400 shadow-lg transition duration-300">
                 {/* Display text on large screens */}
                 <span className="hidden lg:block">Download CV</span>
                 
