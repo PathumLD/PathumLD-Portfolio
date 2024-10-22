@@ -13,21 +13,21 @@ const AboutMe = () => {
     ];
 
     return (
-      <div className="md:flex-row flex justify-between gap-10 mt-0 flex-col">
+      <div className="md:flex-row flex justify-between gap-10 mt0 flex-col">
         {/* Image container */}
         <div 
           ref={imageRef}
-          className='scroll-animate w-60 h-60 justify-center items-center mx-auto md:justify-start md:w-96 md:h-[21rem] object-cover'
+          className='scroll-animate w-60 h-60 justify-center items-center mx-auto md:justify-start md:w-96 md:h-[21.5rem] object-cover'
         >
             <img 
               src={Image2} 
-              className='rounded-xl p-3 border-2 border-cyan-400' 
+              className='rounded-xl p-4 border-2 border-cyan-400' 
               alt="Image2" 
             />
         </div>
 
         {/* Text content container */}
-        <div className='text-white my-auto pt-10 md:pt-0'>
+        <div className='text-white my-auto pt-20 md:pt-0'>
             <p 
               ref={introRef}
               className='scroll-animate mb-12 text-center font-semibold'
