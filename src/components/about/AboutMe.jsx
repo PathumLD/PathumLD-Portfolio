@@ -7,7 +7,7 @@ const AboutMe = () => {
             <img src={Image2} className='rounded-xl p-4 border-2  border-cyan-400' alt="Image2" />
         </div>
        <div className='text-white my-auto pt-10 md:pt-0 '>
-            <h2 className="text-4xl font-bold my-3">Pathum Dissanayake</h2>
+            <h2 className="text-4xl font-bold my-3 mx-auto">Pathum Dissanayake</h2>
             <p className='mb-3'>
                 I&rsquo;m a passionate software engineer with experience in building
                 scalable web applications using modern technologies.
