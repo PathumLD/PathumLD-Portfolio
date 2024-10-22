@@ -14,8 +14,8 @@ const ContactInfo = () => {
 
   return (
     <div className="w-full sm:w-1/2 p-6 bg-slate-950 text-white">
-      <div className="mt12 md:mt-28">
-        <div className="flex bottom-0 mt-2 -z-20">
+      <div className="mt-0 md:mt-28">
+        <div className="flex bottom-0 mt-2 ">
           <MapContainer
             center={[7.330875817375049, 80.25506795300656]}
             zoom={12}

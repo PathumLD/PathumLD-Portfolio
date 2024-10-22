@@ -2,7 +2,7 @@ import React, { useState, useEffect, Suspense } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-const Footer = React.lazy(() => import('./pages/ContactMe'));
+const ContactMe = React.lazy(() => import('./pages/ContactMe'));
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { FaArrowUp } from "react-icons/fa";
@@ -56,7 +56,7 @@ function App() {
         <Skills />
         <Projects />
         <Suspense fallback={<div>Loading...</div>}>
-        <Footer />
+        <ContactMe />
         </Suspense>
       </div>
 

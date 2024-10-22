@@ -28,7 +28,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 0.2 } // Adjust threshold for better detection
     );
 
     sections.forEach((section) => {
