@@ -6,7 +6,7 @@ const SkillsSection = () => {
       {skillsData.map((skill) => (
         <div
           key={skill.id}
-          className="relative w-20 md:w-28 h-20 md:h-28 bg-cover mx-auto bg-center bg-white rounded-full shadow-md"
+          className="relative w-24 md:w-28 h-24 md:h-28 bg-cover mx-auto bg-center bg-white rounded-full shadow-md"
           style={{ backgroundImage: `url(${skill.logo})` }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-80 hover:border opacity-0 hover:opacity-100 flex items-center justify-center rounded-full transition-opacity duration-300">

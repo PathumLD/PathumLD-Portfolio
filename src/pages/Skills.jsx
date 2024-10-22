@@ -9,20 +9,21 @@ const Skills = () => {
     <section id='skills' className="min-h-screen bg-slate-950 text-white p-3">
       <div className='sticky  top-16 md:top-12 px-20 z-10 w-full my-4 flex justify-center items-center bg-slate-950 pb-2'>
         <div className="flex mt-8 text-white flex-wrap gap-2 sm:gap-3 md:gap-4 justify-center ">
-            <button
-            onClick={() => setActiveSection('skills')}
-            className={`px-4 py-2 mr-2 ${activeSection === 'skills' ? 'bg-cyan-500' : 'bg-white text-slate-900'} rounded-full`}>
-            Skills
-            </button>
-            <button
+          <button
             onClick={() => setActiveSection('certificates')}
             className={`px-4 py-2 ${activeSection === 'certificates' ? 'bg-cyan-500' : 'bg-white text-slate-900'} rounded-full`}>
             Certificates
-            </button>
+          </button>
+          <button
+            onClick={() => setActiveSection('skills')}
+            className={`px-4 py-2 mr-2 ${activeSection === 'skills' ? 'bg-cyan-500' : 'bg-white text-slate-900'} rounded-full`}>
+            Skills
+          </button>
+            
         </div>
       </div>
 
-      <div>
+      <div className='mt-16'>
         {activeSection === 'skills' && <SkillsSection />}
         {activeSection === 'certificates' && <CertificatesSection />}
       </div>
