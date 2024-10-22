@@ -13,12 +13,12 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
       }}
     >
       {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity group-hover:bg-opacity-80"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-60 transition-opacity group-hover:bg-opacity-80"></div>
       
       {/* Content */}
       <div className="relative h-full flex flex-col justify-between p-3 text-white z-10">
         <div>
-          <h2 className="text-2xl font-bold mb-2">{title}</h2>
+          <h2 className="text-2xl font-bold text-cyan-400 mb-2">{title}</h2>
           <p className="text-sm  opacity-90">{description}</p>
         </div>
 
