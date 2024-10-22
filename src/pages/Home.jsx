@@ -1,6 +1,6 @@
 import { useState, useEffect, Fragment } from 'react';
 import Typewriter from 'typewriter-effect';
-import myImage from '../assets/img1.jpg'; // Your image
+import myImage from '../assets/image1.png'; 
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
@@ -108,7 +108,7 @@ const Home = () => {
               </span>
             </h2>
           </div>
-          <p className="text-sm md:text-xl mt-2 mx-2 md:mx-auto md:mt-8 text-justify text-white">Where logic meets creativity, I build digital dreams. My code paints, and my designs compute.</p>
+          <p className="text-sm md:text-xl mt-2 mx-2 md:mx-auto md:mt-8 text-justify text-white">Where logic meets creativity, I build digital dreams.</p>
           <div className='flex gap-4 items-center justify-center lg:justify-start mt-4'>
             <div className='mt-4 flex gap-4 text-xl text-white'>
               <a href="https://www.linkedin.com/in/pathumld/" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400 '><FaLinkedinIn /></a>
