@@ -132,7 +132,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="px-10 py-2 bg-white rounded-xl hover:bg-cyan-400 text-slate-900 hover:text-white flex justify-center mx-auto">
+          className="px-40 py-2 bg-white rounded-xl hover:bg-cyan-400 text-slate-900 hover:text-white flex justify-center mx-auto">
           Submit
         </button>
       </form>
