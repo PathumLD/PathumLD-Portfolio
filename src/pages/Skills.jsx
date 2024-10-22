@@ -3,7 +3,7 @@ import SkillsSection from '../components/skills/SkillsSection';
 import CertificatesSection from '../components/skills/CertificatesSection';
 
 const Skills = () => {
-  const [activeSection, setActiveSection] = useState('skills');
+  const [activeSection, setActiveSection] = useState('certificates');
 
   return (
     <section id='skills' className="min-h-screen bg-slate-950 text-white p-3">

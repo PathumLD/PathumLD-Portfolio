@@ -98,7 +98,7 @@ const Navbar = () => {
                         activeSection === '#skills' ? 'text-cyan-400 font-semibold' : 'text-white'
                       }`}
                     >
-                      Skills
+                      Certificates
                     </a>
                   </li>
                   <li>
@@ -156,7 +156,7 @@ const Navbar = () => {
                       activeSection === '#skills' ? 'text-cyan-400 font-semibold' : 'text-white'
                     }`}
                   >
-                    Skills
+                    Certificates
                 </a>
                 <a
                   href='#projects'
