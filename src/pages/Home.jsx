@@ -1,6 +1,6 @@
 import { useState, useEffect, Fragment } from 'react';
 import Typewriter from 'typewriter-effect';
-import myImage from '../assets/image1.png'; 
+import myImage from '../assets/Image1.png'; 
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
