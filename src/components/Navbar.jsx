@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className='flex justify-between items-center mx-6'>
             {/* Logo and title */}
             <button onClick={toggleLogo}>
-              <h1 className='font-bold text-2xl text-cyan-400'>PathumLD</h1>
+              <h1 className='font-bold text-2xl text-white'>Pathum<span className='text-cyan-400'>LD</span></h1>
             </button>
             {/* Mobile menu icon */}
             <div className='sm:hidden'>
