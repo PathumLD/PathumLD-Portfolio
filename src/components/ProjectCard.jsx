@@ -17,7 +17,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
       
       {/* Content */}
       <div className="relative h-full flex flex-col justify-between p-3 text-white z-10">
-        <div>
+        <div className=''>
           <h2 className="text-2xl font-bold text-cyan-400 mb-2">{title}</h2>
           <p className="text-sm  opacity-90">{description}</p>
         </div>

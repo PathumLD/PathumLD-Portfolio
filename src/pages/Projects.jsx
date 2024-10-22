@@ -45,7 +45,7 @@ const Projects = () => {
       {/* Scrollable project card list with smooth scrolling */}
       <div className="w-full max-w-6xl h-[36rem] md:h-[60rem] my-4 overflow-y-auto scroll-smooth no-scrollbar p-4  rounded-lg">
         <AnimatePresence>
-          <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-2">
+          <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4">
             {filteredProjects.map(project => (
               <motion.div
                 key={project.id}
