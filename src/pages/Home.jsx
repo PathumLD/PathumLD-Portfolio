@@ -49,7 +49,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section id='home' className="h-screen flex items-center justify-center p-6 sm:p-12 md:p-20 bg-red-950">
+    <section id='home' className="h-screen flex items-center justify-center p-6 sm:p-12 md:p-20 bg-slate-950">
       <div className="container max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-28 mt-8 md:mt-24 ">
         
         {/* Left Div: Profile Image */}
