@@ -85,7 +85,7 @@ const Home = () => {
         <div className="roadmap-item text-center md:text-left right-div flex-1">
           <h1 className="text-2xl md:text-4xl text-white ">Hello, I&rsquo;m</h1>
           <h1 className="text-4xl md:text-6xl text-cyan-400 font-bold -ml-1">Pathum Dissanayake </h1>
-          <div className="text-2xl md:text-4xl text-blue-400 flex items-center justify-center md:justify-start">
+          <div className="text-2xl md:text-4xl mt-3 text-blue-400 flex items-center justify-center md:justify-start">
             <h2 className="text-lg md:text-3xl text-white inline-flex items-center">
                and I&rsquo;m a&nbsp; {/* Ensures the "I'm" stays on the same line */}
               <span className='text-cyan-400 inline-block'>
@@ -108,16 +108,16 @@ const Home = () => {
               </span>
             </h2>
           </div>
-          <p className="text-sm md:text-xl mt-2 mx-2 md:mx-auto md:mt-8 text-justify text-white">Where logic meets creativity, I build digital dreams.</p>
+          <p className="text-sm md:text-xl mt-2 mx-2 md:mx-auto md:mt-8 text-justify text-white">Turning complex problems into elegant solutions.</p>
           <div className='flex gap-4 items-center justify-center lg:justify-start mt-4'>
-            <div className='mt-4 flex gap-4 text-xl text-white'>
-              <a href="https://www.linkedin.com/in/pathumld/" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400 '><FaLinkedinIn /></a>
-              <a href="https://github.com/PathumLD" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><FaGithub /></a>
-              <a href="mailto:pathumlk.diz@gmail.com" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><AiOutlineMail /></a>
-              <a href="https://wa.me/+94729997763" className='border p-2 rounded-full hover:text-cyan-400 hover:border-cyan-400'><FaWhatsapp /></a>
+            <div className='mt-4 flex gap-4 text-xl text-white '>
+              <a href="https://www.linkedin.com/in/pathumld/" className='border p-2 rounded-full  hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800 transition duration-500'><FaLinkedinIn /></a>
+              <a href="https://github.com/PathumLD" className='border p-2 rounded-full  hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800 transition duration-500'><FaGithub /></a>
+              <a href="mailto:pathumlk.diz@gmail.com" className='border p-2 rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800 transition duration-500'><AiOutlineMail /></a>
+              <a href="https://wa.me/+94729997763" className='border p-2 rounded-full  hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800 transition duration-500'><FaWhatsapp /></a>
             </div>
             <a href="/cv/PathumDissanayake_SoftwareEngineer.pdf" download>
-              <button className="mt-4 px-2.5 py-2.5 md:px-3 md:py-1.5 btn-animate text-white rounded-3xl border hover:text-cyan-400 hover:border-cyan-400 shadow-lg transition duration-300">
+              <button className="mt-4 px-2.5 py-2.5 md:px-3 md:py-1.5 text-white rounded-3xl border  hover:border-cyan-400 shadow-lg transition duration-500 hover:-translate-y-2 hover:bg-cyan-400 hover:text-white hover:font-semibold">
                 {/* Display text on large screens */}
                 <span className="hidden lg:block">Download CV</span>
                 
