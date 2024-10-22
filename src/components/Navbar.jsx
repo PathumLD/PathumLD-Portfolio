@@ -43,7 +43,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='container items-center justify-center md:mx-auto max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl'>
+    <nav className='container items-center justify-center md:mx-auto max-w-lg  sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl'>
       <div className='bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border z-50 border-black border-opacity-20 rounded-full mx-2'>
         <div className='py-4 mx-auto'>
           <div className='flex justify-between items-center mx-6'>

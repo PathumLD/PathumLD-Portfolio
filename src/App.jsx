@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-import Footer from "./pages/ContactMe";
+const Footer = React.lazy(() => import('./pages/ContactMe'));
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { FaArrowUp } from "react-icons/fa";
@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       {/* Conditionally render Navbar based on scroll position */}
-      <div className={`fixed w-full mx-auto justify-center  top-10 z-50 transition-transform duration-500 ease-in-out 
+      <div className={`fixed w-full mx-auto justify-center   top-10 z-50 transition-transform duration-500 ease-in-out 
           ${showNavbar ? "translate-y-0" : "-translate-y-8"} 
           opacity-100`}
       >
@@ -55,7 +55,9 @@ function App() {
         </div>
         <Skills />
         <Projects />
+        <Suspense fallback={<div>Loading...</div>}>
         <Footer />
+        </Suspense>
       </div>
 
       {/* Display the "Back to Home" button when navbar is hidden */}
