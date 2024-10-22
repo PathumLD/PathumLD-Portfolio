@@ -25,7 +25,7 @@ const Projects = () => {
       className="bg-fixed bg-cover bg-slate-900 bg-center h-screen pt-6 md:pt-10 px-4 md:px-10 flex flex-col items-center justify-start"
     >
       {/* Sticky filter buttons for selecting categories */}
-      <div className="sticky top-16 md:top-12 z-10 w-full my-4 flex justify-center items-center bg-slate-900 pb-2">
+      <div className="sticky top-12 md:top-12 z-10 w-full my-4 flex justify-center items-center bg-slate-900 pb-2">
   <div className="flex mt-12 md:mt-8 text-white flex-wrap gap-2 md:gap-4 justify-center">
     {filterCategories.map(category => (
       <button
