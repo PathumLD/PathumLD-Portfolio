@@ -2,42 +2,37 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        fadeSlideIn: {
+          '0%': { opacity: '0', transform: 'translateX(-50px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' }
+        },
+        fadeSlideRight: {
+          '0%': { opacity: '0', transform: 'translateX(-50px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' }
+        },
+        fadeSlideLeft: {
+          '0%': { opacity: '0', transform: 'translateX(50px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' }
+        },
+        fadeSlideUp: {
+          '0%': { opacity: '0', transform: 'translateY(50px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' }
+        }
+      },
+      animation: {
+        'fadeSlideIn': 'fadeSlideIn 0.5s ease-out forwards',
+        'fadeSlideRight': 'fadeSlideRight 0.5s ease-out forwards',
+        'fadeSlideLeft': 'fadeSlideLeft 0.5s ease-out forwards',
+        'fadeSlideUp': 'fadeSlideUp 0.5s ease-out forwards',
+        'fadeIn': 'fadeIn 0.5s ease-out forwards'
+      }
+    }
   },
   plugins: [],
 };
-
-
-// /** @type {import('tailwindcss').Config} */
-// export default  {
-//   theme: {
-//     screens: {
-//       sm: '480px',
-//       md: '768px',
-//       lg: '976px',
-//       xl: '1440px',
-//     },
-//     colors: {
-//       'blue': '#1fb6ff',
-//       'pink': '#ff49db',
-//       'orange': '#ff7849',
-//       'green': '#13ce66',
-//       'gray-dark': '#273444',
-//       'gray': '#8492a6',
-//       'gray-light': '#d3dce6',
-//     },
-//     fontFamily: {
-//       sans: ['Graphik', 'sans-serif'],
-//       serif: ['Merriweather', 'serif'],
-//     },
-//     extend: {
-//       spacing: {
-//         '128': '32rem',
-//         '144': '36rem',
-//       },
-//       borderRadius: {
-//         '4xl': '2rem',
-//       }
-//     }
-//   }
-// }

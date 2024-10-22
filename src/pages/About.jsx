@@ -27,7 +27,7 @@ const About = () => {
   };
 
   return (
-    <section id='about' className="min-h-screen bg-slate-900 flex flex-col items-center justify-start p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+    <section id='about' className="h-screen bg-slate-900 flex flex-col items-center justify-start p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
       {/* Sticky buttons at the top */}
       <div className="sticky top-16 md:top-12 z-10 w-full my-4 flex justify-center items-center bg-slate-900 pb-2">
         <div className="flex mt-8 text-white flex-wrap gap-2 sm:gap-3 md:gap-4 justify-center">
@@ -47,7 +47,7 @@ const About = () => {
 
       {/* Section rendering with scrollable container and hidden scrollbar */}
       <div
-        className="transition-all duration-700 mt-4 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12 w-full max-w-4xl h-[40rem] sm:h-[42rem] md:h-[44rem] lg:h-[46rem] xl:h-[48rem] overflow-y-auto no-scrollbar p-4 sm:p-6 md:p-8 lg:p-10 bg-slate-900 rounded-lg"
+        className="transition-all duration-700 mt-4 sm:mt-1  w-full max-w-4xl h-[40rem] sm:h-[42rem] md:h-[44rem] lg:h-[46rem] xl:h-[48rem] overflow-y-auto no-scrollbar p-4 sm:p-6  bg-slate-900 rounded-lg"
         key={activeSection}
       >
         {renderSection()}
