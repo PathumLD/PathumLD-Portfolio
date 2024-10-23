@@ -153,3 +153,56 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* certificate */
+
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-in.slide-left {
+  animation: slide-left 0.6s ease-out forwards;
+}
+
+.animate-in.slide-right {
+  animation: slide-right 0.6s ease-out forwards;
+}
+
+/* Define your animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation when .animate class is added */
+.animate {
+  opacity: 1;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+

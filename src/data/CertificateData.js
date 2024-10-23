@@ -15,7 +15,7 @@ export const certificatesData = [
     },
     {
       id: 3,
-      name: '.Building Web APIs with ASP.Net Core',
+      name: 'Building Web APIs with ASP.Net Core',
       issuer: 'Linkedin Learning',
       link: 'https://www.linkedin.com/posts/pathumld_certificate-of-completion-activity-7148395656703791104-sd5y?utm_source=share&utm_medium=member_desktop',
       date: 'Jan 2024',

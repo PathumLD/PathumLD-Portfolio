@@ -23,14 +23,19 @@ export default {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' }
-        }
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(50px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         'fadeSlideIn': 'fadeSlideIn 0.5s ease-out forwards',
         'fadeSlideRight': 'fadeSlideRight 0.5s ease-out forwards',
         'fadeSlideLeft': 'fadeSlideLeft 0.5s ease-out forwards',
         'fadeSlideUp': 'fadeSlideUp 0.5s ease-out forwards',
-        'fadeIn': 'fadeIn 0.5s ease-out forwards'
+        'fadeIn': 'fadeIn 0.5s ease-out forwards',
+        'fadeInUp': 'fadeInUp 0.6s ease-out forwards',
       }
     }
   },

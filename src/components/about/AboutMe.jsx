@@ -76,7 +76,7 @@ const AboutMe = () => {
                   style={{ transitionDelay: '0.7s' }}
                 >
                     <span className='font-bold text-cyan-300'>Languages :</span> 
-                    <span className='ml-2'>English, Sinhalese</span>
+                    <span className='ml-2'>English, Sinhala</span>
                 </h3>
             </div>
         </div>
