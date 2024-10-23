@@ -23,7 +23,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className='mt-16'>
+      <div className='mt-12'>
         {activeSection === 'skills' && <SkillsSection />}
         {activeSection === 'certificates' && <CertificatesSection />}
       </div>
