@@ -2,7 +2,8 @@ import React, { useState, useEffect, Suspense } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
-const ContactMe = React.lazy(() => import('./pages/ContactMe'));
+// const ContactMe = React.lazy(() => import('./pages/ContactMe'));
+import ContactMe from "./pages/ContactMe";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import { FaArrowUp } from "react-icons/fa";
@@ -55,9 +56,9 @@ function App() {
         </div>
         <Skills />
         <Projects />
-        <Suspense fallback={<div>Loading...</div>}>
+        {/* <Suspense fallback={<div>Loading...</div>}> */}
         <ContactMe />
-        </Suspense>
+        {/* </Suspense> */}
       </div>
 
       {/* Display the "Back to Home" button when navbar is hidden */}
