@@ -13,7 +13,7 @@ const AboutMe = () => {
     ];
 
     return (
-      <div className="md:flex-row flex justify-between gap-10 mt0 flex-col">
+      <div className="flex flex-col justify-between gap-10 md:flex-row mt0">
         {/* Image container */}
         <div 
           ref={imageRef}
@@ -21,26 +21,26 @@ const AboutMe = () => {
         >
             <img 
               src={Image2} 
-              className='rounded-xl p-4 border-2 border-cyan-400' 
+              className='p-4 border-2 rounded-xl border-cyan-400' 
               alt="Image2" 
             />
         </div>
 
         {/* Text content container */}
-        <div className='text-white my-auto pt-20 md:pt-0'>
+        <div className='pt-20 my-auto text-white md:pt-0'>
             <p 
               ref={introRef}
-              className='scroll-animate mb-12 text-center font-semibold'
+              className='mb-12 font-semibold text-center scroll-animate'
               style={{ transitionDelay: '0.2s' }}
             >
                 I&rsquo;m a passionate software engineer with experience in building
                 scalable web applications using modern technologies.
             </p>
 
-            <div className='flex-row mx-4'>
+            <div className='flex-row mx-4 '>
                 <h3 
                   ref={infoRefs[0]}
-                  className='scroll-animate-left'
+                  className='mb-2 scroll-animate-left'
                   style={{ transitionDelay: '0.3s' }}
                 >
                     <span className='font-bold text-cyan-300'>Full Name :</span> 
@@ -48,7 +48,7 @@ const AboutMe = () => {
                 </h3>
                 <h3 
                   ref={infoRefs[1]}
-                  className='scroll-animate-left'
+                  className='mb-2 scroll-animate-left'
                   style={{ transitionDelay: '0.4s' }}
                 >
                     <span className='font-bold text-cyan-300'>Address :</span> 
@@ -56,7 +56,7 @@ const AboutMe = () => {
                 </h3>
                 <h3 
                   ref={infoRefs[2]}
-                  className='scroll-animate-left'
+                  className='mb-2 scroll-animate-left'
                   style={{ transitionDelay: '0.5s' }}
                 >
                     <span className='font-bold text-cyan-300'>Phone :</span> 
@@ -64,7 +64,7 @@ const AboutMe = () => {
                 </h3>
                 <h3 
                   ref={infoRefs[3]}
-                  className='scroll-animate-left'
+                  className='mb-2 scroll-animate-left'
                   style={{ transitionDelay: '0.6s' }}
                 >
                     <span className='font-bold text-cyan-300'>Email :</span> 
@@ -72,7 +72,7 @@ const AboutMe = () => {
                 </h3>
                 <h3 
                   ref={infoRefs[4]}
-                  className='scroll-animate-left'
+                  className='mb-2 scroll-animate-left'
                   style={{ transitionDelay: '0.7s' }}
                 >
                     <span className='font-bold text-cyan-300'>Languages :</span> 

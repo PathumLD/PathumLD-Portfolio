@@ -13,32 +13,14 @@ const ContactInfo = () => {
   });
 
   return (
-    <div className="w-full sm:w-2/3 lg:w-1/2 p-8  text-white rounded-2xl shadow-lg mx-auto mt-8">
-      {/* <h2 className="text-3xl font-bold text-center text-teal-400 mb-6">Get in Touch</h2> */}
-      
-      {/* <div className="flex flex-col lg:flex-row items-center justify-between lg:space-x-6"> */}
-        {/* Contact Info Card */}
-        {/* <div className="w-full lg:w-1/2 bg-slate-800 rounded-lg p-6 shadow-lg mb-6 lg:mb-0">
-          <h3 className="text-xl font-semibold text-teal-300 mb-4 text-center">Contact Information</h3>
-          <div className="space-y-3">
-            <p className="text-lg">
-              <span className="font-semibold text-teal-300">Address:</span> Poramadala, Yatigaloluwa, Polgahawela
-            </p>
-            <p className="text-lg">
-              <span className="font-semibold text-teal-300">Phone:</span> +94 123 456 789
-            </p>
-            <p className="text-lg">
-              <span className="font-semibold text-teal-300">Email:</span> contact@domain.com
-            </p>
-          </div>
-        </div> */}
+    <div className="w-full p-8 mx-auto mt-8 text-white shadow-lg sm:w-2/3 lg:w-1/2 rounded-2xl">
 
         {/* Map Container */}
-        <div className="w-full  h-80 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105">
+        <div className="w-full overflow-hidden transition duration-300 transform rounded-lg shadow-lg h-80 hover:shadow-2xl hover:scale-105">
           <MapContainer
             center={[7.330875817375049, 80.25506795300656]}
             zoom={12}
-            className="h-full w-full"
+            className="w-full h-full"
           >
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -52,14 +34,6 @@ const ContactInfo = () => {
             </Marker>
           </MapContainer>
         </div>
-      {/* </div> */}
-
-      {/* Call-to-Action Button */}
-      {/* <div className="flex justify-center mt-8">
-        <button className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
-          Get Directions
-        </button>
-      </div> */}
     </div>
   );
 };

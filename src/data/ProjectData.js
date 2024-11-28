@@ -69,4 +69,14 @@ export const projects = [
     demoLink: "https://your-demo.com",
     category: "web apps"
   },
+  // {
+  //   id: 8,
+  //   coverImage: "https://images.ctfassets.net/pdf29us7flmy/7pN8DM5Wy8xTsQNagfgdYn/b68653e60598e2ad8bbab302e8852a1e/GettyImages-139887145_optimized.jpg",
+  //   title: "Student Management System",
+  //   description: "Helps manage students, teachers, classrooms, and payments,improving education management and user experience.",
+  //   techStack: ["Java"],
+  //   githubLink: "https://github.com/your-repo",
+  //   demoLink: "https://your-demo.com",
+  //   category: "web apps"
+  // },
 ];
