@@ -30,7 +30,7 @@ const ContactInfo = () => {
               position={[7.330875817375049, 80.25506795300656]}
               icon={customIcon}
             >
-              <Popup>Address: Poramadala, Yatigaloluwa, Polgahawela</Popup>
+              <Popup>Address: 201/2, Poramadala, Yatigaloluwa, Polgahawela</Popup>
             </Marker>
           </MapContainer>
         </div>
