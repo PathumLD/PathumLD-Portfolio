@@ -8,7 +8,7 @@ import useScrollAnimation from '../components/useScrollAnimation';
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
-  const filterCategories = ['all', 'web apps', 'websites', 'mobile apps', 'flyers', 'social media posts', 'ui designs', 'others'];
+  const filterCategories = ['all', 'web apps', 'websites', 'mobile apps', 'flyers', 'social media posts', 'ui designs', 'logo', 'others'];
 
   const filteredProjects = projects.filter(project => 
     filter === 'all' ? true : project.category === filter
@@ -27,11 +27,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-fixed bg-cover bg-slate-900 bg-center h-screen pt-6  px-4 md:px-10 flex flex-col items-center justify-start"
+      className="flex flex-col items-center justify-start h-screen px-4 pt-6 bg-fixed bg-center bg-cover bg-slate-900 md:px-10"
     >
       {/* Sticky filter buttons for selecting categories */}
-      <div className="sticky top-16 md:top-12 z-10 w-full my-4 flex justify-center items-center bg-slate-900 pb-2">
-        <div className="flex mt-12  text-white flex-wrap gap-2 md:gap-4 justify-center">
+      <div className="sticky z-10 flex items-center justify-center w-full pb-2 my-4 top-16 md:top-12 bg-slate-900">
+        <div className="flex flex-wrap justify-center gap-2 mt-12 text-white md:gap-4">
           {filterCategories.map(category => (
             <button
               key={category}
@@ -50,7 +50,7 @@ const Projects = () => {
       {/* Scrollable project card list with smooth scrolling */}
       <div ref={elementRef} className="w-full max-w-6xl h-[36rem] md:h-[60rem] my-3 overflow-y-auto scroll-smooth no-scrollbar p-4  rounded-lg">
         <AnimatePresence>
-          <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4">
+          <motion.div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-4">
             {filteredProjects.map(project => (
               <motion.div
                 key={project.id}
