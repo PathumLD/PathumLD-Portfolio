@@ -70,7 +70,7 @@ const Navbar = () => {
             {/* Desktop menu */}
             <div className='hidden sm:block sm:ml-6'>
               <div className='flex space-x-4'>
-                <ul className='flex justify-end gap-6 text-base text-white'>
+                <ul className='flex justify-end gap-6 text-base text-cyan-400'>
                   <li className=''>
                     <a
                       href='#home'
@@ -133,7 +133,7 @@ const Navbar = () => {
         <div className='sm:hidden' id='mobile-menu'>
           <div className='z-50 h-screen mt-4 bg-cyan-400 bg-opacity-20 backdrop-filter backdrop-blur-xl rounded-3xl'>
             <div className='px-2 pt-2 pb-3 text-center'>
-              <div className='flex flex-col items-center justify-center mt-8 space-y-4 text-xl text-white'>
+              <div className='flex flex-col items-center justify-center mt-8 space-y-4 text-xl text-cyan-400'>
                 <a
                   href='#home'
                   className={`block px-3 py-2 rounded-md underline-animation ${

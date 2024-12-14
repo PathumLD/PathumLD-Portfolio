@@ -59,12 +59,12 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="w-full  max-w-xl mx-auto p-4">
+    <div className="w-full max-w-xl p-4 mx-auto">
       <div className="bg-gradient-to-br from-blue-500 to-cyan-500 p-[2px] rounded-2xl">
-        <div className="bg-gray-900 rounded-2xl p-8">
+        <div className="p-8 bg-gray-900 rounded-2xl">
           <div className="space-y-8">
-            <div className="text-center space-y-2">
-              <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            <div className="space-y-2 text-center">
+              <h2 className="text-3xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text">
                 Get in <span className='text-white'>Touch</span>
               </h2>
               <p className="text-gray-400">
@@ -72,11 +72,11 @@ const ContactForm = () => {
               </p>
             </div>
 
-            <form ref={form} onSubmit={sendEmail} className="space-y-4  mb-20">
+            <form ref={form} onSubmit={sendEmail} className="mb-20 space-y-4">
               <div className={`transition-transform duration-300 ${
                 activeField === 'name' ? 'scale-105' : ''
               }`}>
-                <label className="block text-sm text-gray-400 mb-1">Your Name</label>
+                <label className="block mb-1 text-sm text-gray-400">Your Name</label>
                 <div className="relative">
                   <div className={`absolute left-3 top-3 transition-colors duration-300 ${
                     activeField === 'name' ? 'text-blue-400' : 'text-gray-500'
@@ -90,7 +90,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     onFocus={() => handleFocus('name')}
                     onBlur={handleBlur}
-                    className="w-full bg-gray-800/50 border border-gray-700 rounded-lg py-2 pl-9 pr-4 text-white focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full py-2 pr-4 text-white transition-all duration-300 border border-gray-700 rounded-lg bg-gray-800/50 pl-9 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     placeholder="Pathum Dissanayake"
                     required
                   />
@@ -100,7 +100,7 @@ const ContactForm = () => {
               <div className={`transition-transform duration-300 ${
                 activeField === 'email' ? 'scale-105' : ''
               }`}>
-                <label className="block text-sm text-gray-400 mb-1">Email Address</label>
+                <label className="block mb-1 text-sm text-gray-400">Email Address</label>
                 <div className="relative">
                   <div className={`absolute left-3 top-3 transition-colors duration-300 ${
                     activeField === 'email' ? 'text-blue-400' : 'text-gray-500'
@@ -114,7 +114,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     onFocus={() => handleFocus('email')}
                     onBlur={handleBlur}
-                    className="w-full bg-gray-800/50 border border-gray-700 rounded-lg py-2 pl-9 pr-4 text-white focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full py-2 pr-4 text-white transition-all duration-300 border border-gray-700 rounded-lg bg-gray-800/50 pl-9 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     placeholder="pathumlk.diz@gmail.com"
                     required
                   />
@@ -124,7 +124,7 @@ const ContactForm = () => {
               <div className={`transition-transform duration-300 ${
                 activeField === 'phone' ? 'scale-105' : ''
               }`}>
-                <label className="block text-sm text-gray-400 mb-1">Phone Number</label>
+                <label className="block mb-1 text-sm text-gray-400">Phone Number</label>
                 <div className="relative">
                   <div className={`absolute left-3 top-3 transition-colors duration-300 ${
                     activeField === 'phone' ? 'text-blue-400' : 'text-gray-500'
@@ -138,7 +138,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     onFocus={() => handleFocus('phone')}
                     onBlur={handleBlur}
-                    className="w-full bg-gray-800/50 border border-gray-700 rounded-lg py-2 pl-9 pr-4 text-white focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full py-2 pr-4 text-white transition-all duration-300 border border-gray-700 rounded-lg bg-gray-800/50 pl-9 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     placeholder="+94767342605"
                     required
                   />
@@ -148,7 +148,7 @@ const ContactForm = () => {
               <div className={`transition-transform duration-300 ${
                 activeField === 'reason' ? 'scale-105' : ''
               }`}>
-                <label className="block text-sm text-gray-400 mb-1">Why are you hiring me?</label>
+                <label className="block mb-1 text-sm text-gray-400">Why are you hiring me?</label>
                 <div className="relative">
                   <div className={`absolute left-3 top-3 transition-colors duration-300 ${
                     activeField === 'reason' ? 'text-blue-400' : 'text-gray-500'
@@ -162,7 +162,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     onFocus={() => handleFocus('reason')}
                     onBlur={handleBlur}
-                    className="w-full bg-gray-800/50 border border-gray-700 rounded-lg py-2 pl-9 pr-4 text-white focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full py-2 pr-4 text-white transition-all duration-300 border border-gray-700 rounded-lg bg-gray-800/50 pl-9 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     placeholder="To create a portfolio website"
                     required
                   />
@@ -172,7 +172,7 @@ const ContactForm = () => {
               <div className={`transition-transform duration-300 ${
                 activeField === 'description' ? 'scale-105' : ''
               }`}>
-                <label className="block text-sm text-gray-400 mb-1">Project Details</label>
+                <label className="block mb-1 text-sm text-gray-400">Project Details</label>
                 <div className="relative">
                   <div className={`absolute left-3 top-3 transition-colors duration-300 ${
                     activeField === 'description' ? 'text-blue-400' : 'text-gray-500'
@@ -185,7 +185,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     onFocus={() => handleFocus('description')}
                     onBlur={handleBlur}
-                    className="w-full min-h-32 bg-gray-800/50 border border-gray-700 rounded-lg py-2 pl-9 pr-4 text-white focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full py-2 pr-4 text-white transition-all duration-300 border border-gray-700 rounded-lg min-h-32 bg-gray-800/50 pl-9 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                     placeholder="Briefly explain what you need..."
                     required
                   />
@@ -194,7 +194,7 @@ const ContactForm = () => {
 
               <button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-500  to-cyan-500 text-white rounded-lg py-3 px-4 hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 transform hover:scale-105"
+                className="w-full px-4 py-3 text-white transition-all duration-300 transform rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 hover:scale-105"
               >
                 <div className="flex items-center justify-center space-x-2">
                   <Send size={16} />
@@ -202,7 +202,7 @@ const ContactForm = () => {
                 </div>
               </button>
 
-              <div className="bg-gray-800/50 border border-gray-700  rounded-lg p-4">
+              <div className="p-4 border border-gray-700 rounded-lg bg-gray-800/50">
                 <p className="text-sm text-red-400">
                   Your information is protected and will never be shared with third parties.
                 </p>
@@ -212,7 +212,7 @@ const ContactForm = () => {
         </div>
       </div>
       <ToastContainer />
-    </section>
+    </div>
   );
 };
 
