@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowDownLong } from "react-icons/fa6";
 
 const Home = () => {
-  const roles = ['SOFTWARE ENGINEER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER', 'FULLSTACK DEVELOPER', 'UI / UX DESIGNER', 'GRAPHIC DESIGNER'];
+  const roles = ['SOFTWARE ENGINEER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER', 'FULLSTACK DEVELOPER', 'UI / UX DESIGNER', 'GRAPHIC DESIGNER', 'BLOGGER'];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
   useEffect(() => {
