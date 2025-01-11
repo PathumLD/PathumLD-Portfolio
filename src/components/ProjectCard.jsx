@@ -1,42 +1,67 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import React from 'react';
 
 const ProjectCard = ({ coverImage, title, description, techStack, githubLink, demoLink }) => {
   return (
     <div 
-      className="relative overflow-hidden rounded-lg shadow-lg h-60 group"
+      className="relative overflow-hidden rounded-lg shadow-lg h-60 group transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
       style={{
         backgroundImage: `url(${coverImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 transition-opacity bg-black bg-opacity-40 group-hover:bg-opacity-80"></div>
+      {/* Gradient overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/90 opacity-60 group-hover:opacity-90 transition-opacity duration-300"></div>
       
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-between h-full p-3 text-white">
-        <div className=''>
-          <h2 className="mb-2 text-2xl font-bold text-cyan-400">{title}</h2>
-          <p className="text-sm opacity-90">{description}</p>
+      <div className="relative z-10 flex flex-col justify-between h-full p-4 text-white">
+        <div className="transform transition-all duration-300 group-hover:translate-y-[-8px]">
+          <h2 className="mb-3 text-2xl font-bold text-cyan-400 group-hover:scale-105 transition-transform duration-300">
+            {title}
+          </h2>
+          <p className="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-relaxed">
+            {description}
+          </p>
         </div>
 
-        <div>
-          <div className="flex flex-wrap mb-2">
+        <div className="transform transition-all duration-300 group-hover:translate-y-[-4px]">
+          <div className="flex flex-wrap gap-2 mb-3">
             {techStack.map((tech, index) => (
-              <span key={index} className="px-2 py-1 mb-1 mr-2 text-xs text-white bg-white rounded-full bg-opacity-20 ">
+              <span 
+                key={index} 
+                className="px-3 py-1 text-xs font-medium text-white bg-white/20 rounded-full 
+                          backdrop-blur-sm transform transition-all duration-300
+                          hover:scale-105 hover:bg-white/30"
+              >
                 {tech}
               </span>
             ))}
           </div>
-          <div className="flex justify-end ">
-            {/* <a href={githubLink} target="_blank" rel="noopener noreferrer" className="p-2 text-sm font-bold text-white bg-white/20 hover:text-cyan-500 rounded-3xl hover:underline">
-              GitHub
-            </a> */}
-            <a href={demoLink} target="_blank" rel="noopener noreferrer" className="p-2 text-sm font-bold text-white hover:text-cyan-500 bg-white/20 rounded-3xl hover:underline">
-              Demo
-            </a>
+          <div className="flex justify-end gap-3">
+            {/* {githubLink && (
+              <a 
+                href={githubLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="px-4 py-2 text-sm font-bold text-white bg-white/20 rounded-full
+                         transform transition-all duration-300 hover:scale-105
+                         hover:bg-white/30 hover:text-cyan-400"
+              >
+                GitHub
+              </a>
+            )} */}
+            {demoLink && (
+              <a 
+                href={demoLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="px-4 py-2 text-sm font-bold text-white bg-white/20 rounded-full
+                         transform transition-all duration-300 hover:scale-105
+                         hover:bg-white/30 hover:text-cyan-400"
+              >
+                Demo
+              </a>
+            )}
           </div>
         </div>
       </div>
