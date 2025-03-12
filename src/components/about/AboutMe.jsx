@@ -13,11 +13,11 @@ const AboutMe = () => {
     ];
 
     return (
-      <div className="flex flex-col justify-between gap-10 md:flex-row mt0">
+      <div className="flex flex-col justify-between gap-10 md:flex-row -mt-12">
         {/* Image container */}
         <div 
           ref={imageRef}
-          className='scroll-animate w-60 h-60 justify-center items-center mx-auto md:justify-start md:w-96 md:h-[21.5rem] object-cover'
+          className='scroll-animate mt-20 w-80 h-80 justify-center items-center mx-auto md:justify-start md:w-[32rem] md:h-[28rem] object-cover'
         >
             <img 
               src={Image2} 
@@ -27,17 +27,10 @@ const AboutMe = () => {
         </div>
 
         {/* Text content container */}
-        <div className='pt-20 my-auto text-white md:pt-0'>
-            <p 
-              ref={introRef}
-              className='mb-12 font-semibold text-center scroll-animate'
-              style={{ transitionDelay: '0.2s' }}
-            >
-                I&rsquo;m a passionate software engineer with experience in building
-                scalable web applications using modern technologies.
-            </p>
+        <div className='pt-20 my-auto text-white max-w-xl md:pt-0'>
+            
 
-            <div className='flex-row mx-4 '>
+            {/* <div className='flex-row mx-4 '>
                 <h3 
                   ref={infoRefs[0]}
                   className='mb-2 scroll-animate-left'
@@ -78,7 +71,17 @@ const AboutMe = () => {
                     <span className='font-bold text-cyan-300'>Languages :</span> 
                     <span className='ml-2'>English, Sinhala</span>
                 </h3>
-            </div>
+
+            </div> */}
+            <p 
+              ref={introRef}
+              className='-mt-8   text-justify scroll-animate'
+              style={{ transitionDelay: '0.2s' }}
+            >
+                Hi, I’m Pathum Dissanayake from Sri Lanka. I hold a <span className='font-bold'>Bachelor of Science in Information Systems</span> from the University of Colombo School of Computing.<br/><br/>
+                With <span className='font-bold'>4+ years</span> of experience in graphic design and <span className='font-bold'>2+ years</span> in web development, I specialize in creating visually appealing designs and building efficient web solutions. My work blends creativity with technical expertise, allowing me to deliver high-quality projects across both fields.<br/><br/>
+                I’m passionate about learning new technologies, improving my skills, and sharing knowledge with others.
+            </p>
         </div>
       </div>
     );

@@ -60,7 +60,8 @@ const Experience = () => {
                 <div className="bg-slate-950/40 backdrop-blur-sm p-6 rounded-xl hover:bg-slate-950/60 transition-all duration-300 hover:-translate-y-1 shadow-xl">
                   <h3 className="text-cyan-400 text-xl font-medium mb-2">{exp.role}</h3>
                   <p className="text-white text-base mb-2">{exp.company}</p>
-                  <p className="text-gray-400 text-sm">{exp.duration}</p>
+                  <p className="text-gray-400 text-sm mb-2">{exp.duration}</p>
+                  <p className="text-gray-400 text-xs text-justify">{exp.description}</p>
                 </div>
               </div>
             </div>

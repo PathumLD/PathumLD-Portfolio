@@ -1,11 +1,11 @@
 import { useState, useEffect, Fragment } from 'react';
 import Typewriter from 'typewriter-effect';
 import myImage from '../assets/Image3.jpg'; 
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaMediumM } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaArrowDownLong } from "react-icons/fa6";
+import { FaArrowDownLong, FaBehance, FaMedium } from "react-icons/fa6";
 
 const Home = () => {
   const roles = ['SOFTWARE ENGINEER', 'FRONTEND DEVELOPER', 'BACKEND DEVELOPER', 'FULLSTACK DEVELOPER', 'UI / UX DESIGNER', 'GRAPHIC DESIGNER', 'BLOGGER'];
@@ -115,6 +115,8 @@ const Home = () => {
               <a href="https://github.com/PathumLD" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaGithub /></a>
               <a href="mailto:pathumlk.diz@gmail.com" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><AiOutlineMail /></a>
               <a href="https://wa.me/+94729997763" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaWhatsapp /></a>
+              <a href="https://medium.com/@pathumld" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'> <FaMediumM /></a>
+              <a href="https://www.behance.net/pathumld" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaBehance/></a>
             </div>
             <a href="/cv/PathumDissanayake_SoftwareEngineer.pdf" download>
               <button className="mt-4 px-2.5 py-2.5 md:px-3 md:py-1.5 text-white rounded-3xl border  hover:border-cyan-400 shadow-lg transition duration-500 hover:-translate-y-2 hover:bg-cyan-400 hover:text-white hover:font-semibold">
