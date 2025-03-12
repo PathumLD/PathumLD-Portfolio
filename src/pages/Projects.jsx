@@ -118,6 +118,7 @@ const Projects = () => {
       {/* Project Details Modal - Fixed Position Portal with Hidden Scrollbar */}
       {isModalOpen && selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
+          
           <AnimatePresence>
             {/* Modal Backdrop */}
             <motion.div 
@@ -150,6 +151,8 @@ const Projects = () => {
                   ✕
                 </button>
               </div>
+
+              
               
               <div className="p-6">
                 {/* Project Image */}
