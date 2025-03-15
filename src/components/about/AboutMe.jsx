@@ -27,7 +27,7 @@ const AboutMe = () => {
         </div>
 
         {/* Text content container */}
-        <div className='pt-20 my-auto text-white max-w-xl md:pt-0'>
+        <div className='pt-40 my-auto text-white max-w-xl md:pt-0'>
             
 
             {/* <div className='flex-row mx-4 '>
