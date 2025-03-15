@@ -29,7 +29,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
           {/* Description with slide-up reveal */}
           <div className="mt-6 h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:h-16 group-hover:opacity-100">
             <p className="text-sm leading-relaxed text-white/80">
-              {description.length > 120 ? description.substring(0, 120) + '...' : description}
+              {description.length > 150 ? description.substring(0, 150) + '...' : description}
             </p>
           </div>
         </div>
@@ -55,8 +55,8 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
           </div>
           
           {/* Action buttons */}
-          <div className="flex justify-end gap-3">
-            {/* {githubLink && (
+          {/* <div className="flex justify-end gap-3">
+            {githubLink && (
               <a 
                 href={githubLink} 
                 target="_blank" 
@@ -69,7 +69,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
                 </svg>
                 GitHub
               </a>
-            )} */}
+            )}
             {demoLink && (
               <a 
                 href={demoLink} 
@@ -86,7 +86,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
                 Live Demo
               </a>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

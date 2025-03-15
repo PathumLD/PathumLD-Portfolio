@@ -132,7 +132,7 @@ const Projects = () => {
             
             {/* Modal Content */}
             <motion.div
-              className="relative z-50  w-11/12 max-w-4xl max-h-[80vh] overflow-y-auto rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/30 shadow-xl shadow-cyan-500/20 scrollbar-hide"
+              className="relative z-50   max-w-5xl max-h-[90vh] overflow-y-auto rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/30 shadow-xl shadow-cyan-500/20 scrollbar-hide"
               variants={modalVariants}
               initial="hidden"
               animate="visible"
@@ -154,9 +154,9 @@ const Projects = () => {
 
               
               
-              <div className="p-6">
+              <div className="p-6 ">
                 {/* Project Image */}
-                <div className="w-full h-48 sm:h-60 md:h-80 mb-6 overflow-hidden rounded-lg">
+                <div className="w-full h-48 sm:h-60 md:h-96 mb-6 overflow-hidden rounded-lg">
                   <img 
                     src={selectedProject.coverImage} 
                     alt={selectedProject.title} 
