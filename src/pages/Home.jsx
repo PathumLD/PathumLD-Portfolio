@@ -84,7 +84,7 @@ const Home = () => {
         {/* Right Div: Text and Typewriter */}
         <div className="flex-1 text-center roadmap-item md:text-left right-div">
           <h1 className="text-2xl text-white md:text-4xl ">Hello, I&rsquo;m</h1>
-          <h1 className="-ml-1 text-4xl font-bold md:text-6xl text-cyan-400">Pathum Dissanayake </h1>
+          <h1 className="-ml-1 text-4xl font-bold md:text-6xl text-cyan-400">Pathum Dissanayake</h1>
           <div className="flex items-center justify-center mt-3 text-2xl text-blue-400 md:text-4xl md:justify-start">
             <h2 className="inline-flex items-center text-lg text-white md:text-3xl">
                and I&rsquo;m a&nbsp; {/* Ensures the "I'm" stays on the same line */}
