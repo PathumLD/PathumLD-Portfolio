@@ -1,6 +1,7 @@
 // Example of enhanced project data structure in ../data/ProjectData.js
 
 import logo1 from "../assets/images/logo1.webp";
+import SMP1 from "../assets/images/SMP1.png"
 
 export const newProjects = [
   {
@@ -162,4 +163,43 @@ export const newProjects = [
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com"
   },
+  {
+    "id": 9,
+    "title": "Business Website for ParkWay Hotel",
+    "description": "A professional business website developed for ParkWay Hotel using modern web technologies.",
+    "fullDescription": "This business website was designed and developed for ParkWay Hotel to enhance its online presence. Built using React and Tailwind CSS, the website ensures a responsive, user-friendly experience with a sleek and elegant design that aligns with the hotel's branding.",
+    "category": "business-website",
+    "coverImage": "parkwayWebsiteCover", // Note: This should be updated with the correct import
+    "techStack": ["React", "Tailwind CSS"],
+    "features": [
+      "Responsive and mobile-friendly design",
+      "Elegant UI aligned with hotel branding",
+      "Fast loading with optimized performance",
+      "Interactive booking section",
+      "SEO-friendly structure"
+    ],
+    "githubLink": "https://github.com/your-repo",
+    "demoLink": "https://your-demo.com"
+},
+{
+  id: 10,
+  title: "Social Media Post",
+  description: "An social media post design created to promote a Grade 10–11 educational event on media and communication technology.",
+  fullDescription: "This social media graphic was designed using Adobe Photoshop to promote an educational session titled 'Tharuru Ha Sanhivedana Thakshanaya' for Grade 10 and 11 students. The design includes fantasy-themed background visuals, clear Sinhala typography, session details with time slots, and event branding, all optimized for high engagement on Instagram. It balances visual appeal and clarity to effectively communicate the event information to the target audience.",
+  category: "graphic design",
+  coverImage: SMP1,
+  techStack: ["Adobe Photoshop"],
+  features: [
+    "Designed for social media",
+    "Clear Sinhala typography and event details",
+    "Creative fantasy-themed background to draw attention",
+    "Time slots and grade separation for clarity",
+    "Branding and contact details included",
+    "Optimized for readability and engagement"
+  ],
+  githubLink: "",
+  demoLink: "https://www.behance.net/gallery/224818379/Social-Media-Post-Design"
+}
+
+
 ];

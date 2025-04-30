@@ -11,7 +11,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const filterCategories = ['all', 'web apps', 'websites', 'mobile apps', 'flyers', 'social media posts', 'ui designs', 'logo', 'others'];
+  const filterCategories = ['all', 'web apps', 'websites', 'mobile apps', 'flyers', 'graphic design', 'ui designs', 'logo', 'others'];
 
   const filteredProjects = newProjects.filter(project => 
     filter === 'all' ? true : project.category === filter
@@ -95,7 +95,7 @@ const Projects = () => {
                 exit="exit"
                 layout
                 onClick={() => openModal(project)}
-                className="cursor-pointer transition-transform hover:scale-105"
+                className="transition-transform cursor-pointer hover:scale-105"
               >
                 <ProjectCard 
                   coverImage={project.coverImage}
@@ -146,7 +146,7 @@ const Projects = () => {
               <div className="sticky top-0 right-0 z-50 float-right p-4">
                 <button 
                   onClick={closeModal}
-                  className="flex items-center justify-center w-8 h-8 rounded-full bg-white text-slate-900 hover:bg-cyan-500 transition-colors shadow-md"
+                  className="flex items-center justify-center w-8 h-8 transition-colors bg-white rounded-full shadow-md text-slate-900 hover:bg-cyan-500"
                 >
                   ✕
                 </button>
@@ -156,33 +156,33 @@ const Projects = () => {
               
               <div className="p-6 ">
                 {/* Project Image */}
-                <div className="w-full h-48 sm:h-60 md:h-96 mb-6 overflow-hidden rounded-lg">
+                <div className="w-full h-48 mb-6 overflow-hidden rounded-lg sm:h-60 md:h-96">
                   <img 
                     src={selectedProject.coverImage} 
                     alt={selectedProject.title} 
-                    className="w-full h-full object-cover"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 
                 {/* Project Details */}
                 <div className="space-y-4">
                   <div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">{selectedProject.title}</h2>
-                    <div className="inline-block px-3 py-1 rounded-full bg-cyan-500 text-white text-sm">
+                    <h2 className="mb-2 text-2xl font-bold text-white md:text-3xl">{selectedProject.title}</h2>
+                    <div className="inline-block px-3 py-1 text-sm text-white rounded-full bg-cyan-500">
                       {selectedProject.category}
                     </div>
                   </div>
                   
-                  <p className="text-gray-300 text-base md:text-lg">{selectedProject.description}</p>
+                  <p className="text-base text-gray-300 md:text-lg">{selectedProject.description}</p>
                   
                   {/* Tech Stack */}
                   <div>
-                    <h3 className="text-lg md:text-xl font-semibold text-white mb-2">Technologies Used</h3>
+                    <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">Technologies Used</h3>
                     <div className="flex flex-wrap gap-2">
                       {selectedProject.techStack.map((tech, index) => (
                         <span 
                           key={index}
-                          className="px-3 py-1 rounded-full bg-slate-700 text-white text-sm"
+                          className="px-3 py-1 text-sm text-white rounded-full bg-slate-700"
                         >
                           {tech}
                         </span>
@@ -193,7 +193,7 @@ const Projects = () => {
                   {/* Additional Project Details (you can add more fields to your project data) */}
                   {selectedProject.fullDescription && (
                     <div>
-                      <h3 className="text-lg md:text-xl font-semibold text-white mb-2">About this Project</h3>
+                      <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">About this Project</h3>
                       <p className="text-gray-300">{selectedProject.fullDescription}</p>
                     </div>
                   )}
@@ -201,8 +201,8 @@ const Projects = () => {
                   {/* Features */}
                   {selectedProject.features && (
                     <div>
-                      <h3 className="text-lg md:text-xl font-semibold text-white mb-2">Key Features</h3>
-                      <ul className="list-disc list-inside text-gray-300 space-y-1">
+                      <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">Key Features</h3>
+                      <ul className="space-y-1 text-gray-300 list-disc list-inside">
                         {selectedProject.features.map((feature, index) => (
                           <li key={index}>{feature}</li>
                         ))}
@@ -217,7 +217,7 @@ const Projects = () => {
                         href={selectedProject.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-2 rounded-full bg-slate-700 text-white hover:bg-slate-600 transition-colors"
+                        className="px-6 py-2 text-white transition-colors rounded-full bg-slate-700 hover:bg-slate-600"
                         onClick={(e) => e.stopPropagation()}
                       >
                         GitHub
@@ -228,10 +228,10 @@ const Projects = () => {
                         href={selectedProject.demoLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-2 rounded-full bg-cyan-500 text-white hover:bg-cyan-600 transition-colors"
+                        className="px-6 py-2 text-white transition-colors rounded-full bg-cyan-500 hover:bg-cyan-600"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        Live Demo
+                        Visit 
                       </a>
                     )}
                   </div>
