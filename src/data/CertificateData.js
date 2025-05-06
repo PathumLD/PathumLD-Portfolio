@@ -57,7 +57,7 @@ export const certificatesData = [
     },
     {
       id: 9,
-      name: 'Career Essentials in Cybersecurity by Microsoft and LinkedIn',
+      name: 'Career Essentials in Cybersecurity',
       issuer: 'Microsoft & Linkedin',
       link: 'https://www.linkedin.com/posts/pathumld_certificate-activity-7162897416189362176-2GQq?utm_source=share&utm_medium=member_desktop',
       date: 'Feb 2024',
