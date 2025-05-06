@@ -63,16 +63,16 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-start h-screen px-4 pt-6 bg-fixed bg-center bg-cover bg-slate-900 md:px-10"
+      className="flex flex-col items-center justify-start h-screen px-4 pt-6 bg-fixed bg-center bg-cover bg-slate-900 md:px-8"
     >
       {/* Sticky filter buttons for selecting categories */}
-      <div className="sticky z-10 flex items-center justify-center w-full pb-2 my-4 top-16 md:top-12 bg-slate-900">
-        <div className="flex flex-wrap justify-center gap-2 mt-12 text-white md:gap-4">
+      <div className="sticky z-10 flex items-center justify-center w-full pb-2 my-4 top-16 md:top-10 bg-slate-900">
+        <div className="flex flex-wrap justify-center gap-2 mt-10 text-base text-white md:gap-4">
           {filterCategories.map(category => (
             <button
               key={category}
               onClick={() => setFilter(category)}
-              className={`px-3 md:px-4 py-2 rounded-full ${
+              className={`px-3 md:px-4 py-1 rounded-full ${
                 filter === category ? 'bg-cyan-500' : 'bg-white text-slate-900'
               } hover:bg-cyan-600 transition-colors`}
             >
@@ -115,132 +115,129 @@ const Projects = () => {
         </AnimatePresence>
       </div>
 
-      {/* Project Details Modal - Fixed Position Portal with Hidden Scrollbar */}
+          {/* Modal */}
       {isModalOpen && selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
-          
           <AnimatePresence>
-            {/* Modal Backdrop */}
             <motion.div 
-              className="fixed inset-0 z-40 bg-black/70 backdrop-blur-sm"
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm"
               variants={backdropVariants}
               initial="hidden"
               animate="visible"
               exit="exit"
               onClick={closeModal}
             />
-            
-            {/* Modal Content */}
+
             <motion.div
-              className="relative z-50   max-w-5xl max-h-[90vh] overflow-y-auto rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-cyan-500/30 shadow-xl shadow-cyan-500/20 scrollbar-hide"
+              className="relative z-50 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl bg-slate-900 border border-cyan-500/20 shadow-2xl scrollbar-hide"
               variants={modalVariants}
               initial="hidden"
               animate="visible"
               exit="exit"
-              style={{
-                scrollbarWidth: 'none', /* Firefox */
-                msOverflowStyle: 'none', /* IE and Edge */
-              }}
             >
-              {/* Fixed Close Button that stays in position even when scrolling */}
-              <div className="sticky top-0 right-0 z-50 float-right p-4">
+              <div className="sticky top-0 z-50 flex justify-end p-4 bg-slate-900">
                 <button 
                   onClick={closeModal}
-                  className="flex items-center justify-center w-8 h-8 transition-colors bg-white rounded-full shadow-md text-slate-900 hover:bg-cyan-500"
+                  className="w-8 h-8 transition-colors bg-white rounded-full shadow text-slate-900 hover:bg-cyan-500"
                 >
                   ✕
                 </button>
               </div>
 
-              
-              
-              <div className="p-6 ">
-                {/* Project Image */}
-                <div className="w-full h-48 mb-6 overflow-hidden rounded-lg sm:h-60 md:h-96">
-                  <img 
-                    src={selectedProject.coverImage} 
-                    alt={selectedProject.title} 
-                    className="object-cover w-full h-full"
-                  />
+              <div className="p-6 space-y-6 text-white">
+                {/* Image */}
+                <div className="w-full overflow-hidden shadow-lg rounded-xl">
+                  <img src={selectedProject.coverImage} alt={selectedProject.title} className="object-cover w-full h-64 sm:h-80 md:h-96" />
                 </div>
-                
-                {/* Project Details */}
+
+                {/* Info */}
                 <div className="space-y-4">
                   <div>
-                    <h2 className="mb-2 text-2xl font-bold text-white md:text-3xl">{selectedProject.title}</h2>
-                    <div className="inline-block px-3 py-1 text-sm text-white rounded-full bg-cyan-500">
+                    <h2 className="text-3xl font-bold">{selectedProject.title}</h2>
+                    <div className="inline-block px-3 py-1 mt-2 text-sm font-medium rounded-full bg-cyan-600">
                       {selectedProject.category}
                     </div>
                   </div>
-                  
-                  <p className="text-base text-gray-300 md:text-lg">{selectedProject.description}</p>
-                  
+
+                  <p className="text-gray-300">{selectedProject.description}</p>
+
                   {/* Tech Stack */}
                   <div>
-                    <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">Technologies Used</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedProject.techStack.map((tech, index) => (
-                        <span 
-                          key={index}
-                          className="px-3 py-1 text-sm text-white rounded-full bg-slate-700"
-                        >
+                    <h3 className="text-xl font-semibold">Technologies Used</h3>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {selectedProject.techStack.map((tech, idx) => (
+                        <span key={idx} className="px-3 py-1 text-sm text-gray-200 rounded-full bg-slate-800">
                           {tech}
                         </span>
                       ))}
                     </div>
                   </div>
-                  
-                  {/* Additional Project Details (you can add more fields to your project data) */}
+
+                  {/* Full Description */}
                   {selectedProject.fullDescription && (
                     <div>
-                      <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">About this Project</h3>
-                      <p className="text-gray-300">{selectedProject.fullDescription}</p>
+                      <h3 className="text-xl font-semibold">About this Project</h3>
+                      <p className="mt-1 text-gray-300">{selectedProject.fullDescription}</p>
                     </div>
                   )}
-                  
+
                   {/* Features */}
                   {selectedProject.features && (
                     <div>
-                      <h3 className="mb-2 text-lg font-semibold text-white md:text-xl">Key Features</h3>
-                      <ul className="space-y-1 text-gray-300 list-disc list-inside">
-                        {selectedProject.features.map((feature, index) => (
-                          <li key={index}>{feature}</li>
+                      <h3 className="text-xl font-semibold">Key Features</h3>
+                      <ul className="mt-2 space-y-1 text-gray-300 list-disc list-inside">
+                        {selectedProject.features.map((feature, idx) => (
+                          <li key={idx}>{feature}</li>
                         ))}
                       </ul>
                     </div>
                   )}
-                  
+
                   {/* Links */}
-                  <div className="flex flex-wrap gap-4 pt-4">
-                    {/* {selectedProject.githubLink && (
-                      <a 
+                  {/* <div className="flex flex-wrap gap-3 pt-4">
+                    {selectedProject.githubLink && (
+                      <a
                         href={selectedProject.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-2 text-white transition-colors rounded-full bg-slate-700 hover:bg-slate-600"
+                        className="px-5 py-2 text-sm transition-colors rounded-full bg-slate-700 hover:bg-slate-600"
                         onClick={(e) => e.stopPropagation()}
                       >
                         GitHub
                       </a>
-                    )} */}
+                    )}
                     {selectedProject.demoLink && (
-                      <a 
+                      <a
                         href={selectedProject.demoLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-2 text-white transition-colors rounded-full bg-cyan-500 hover:bg-cyan-600"
+                        className="px-5 py-2 text-sm text-white transition-colors rounded-full bg-cyan-600 hover:bg-cyan-500"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        Visit 
+                        Visit Site
                       </a>
                     )}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </motion.div>
           </AnimatePresence>
         </div>
       )}
+
+      {/* Add this style to hide scrollbars */}
+      <style jsx global>{`
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+        }
+      `}</style>
 
       {/* Custom CSS for hiding scrollbar */}
       <style jsx>{`
