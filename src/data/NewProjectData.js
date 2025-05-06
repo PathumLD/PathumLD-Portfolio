@@ -199,7 +199,28 @@ export const newProjects = [
   ],
   githubLink: "",
   demoLink: "https://www.behance.net/gallery/224818379/Social-Media-Post-Design"
+},
+{
+  id: 11,
+  title: "Flavoura Restaurant Website",
+  description: "A modern restaurant website designed for Flavoura, featuring a complete menu, online reservations, and more.",
+  fullDescription: "The Flavoura restaurant website is a fully responsive and visually appealing platform built to represent a contemporary dining experience. Developed using modern web technologies, it includes a full digital menu with categorization (mains, snacks, beverages, desserts), a table reservation system, contact and location details with Google Maps integration, and a smooth, user-friendly interface. The design emphasizes brand identity and ease of use to enhance customer engagement and drive online reservations.",
+  category: "websites",
+  coverImage: "FlavouraWebsiteCover",
+  techStack: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  features: [
+    "Fully responsive modern UI/UX",
+    "Dynamic digital menu with categories",
+    "Online table reservation form with validation",
+    "Smooth animations using Framer Motion",
+    "Google Maps integration for location access",
+    "SEO-friendly and optimized for performance",
+    "Brand-focused design with custom visuals"
+  ],
+  githubLink: "https://github.com/yourusername/flavoura-restaurant",
+  demoLink: "https://flavoura-restaurant.vercel.app/"
 }
+
 
 
 ];
