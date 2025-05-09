@@ -1,11 +1,38 @@
 // Example of enhanced project data structure in ../data/ProjectData.js
 
 import logo1 from "../assets/images/logo1.webp";
-import SMP1 from "../assets/images/SMP1.png"
+import SMP1 from "../assets/images/SMP1.png";
+import PW from "../assets/images/ParkWay.webp";
+import FL from "../assets/images/Flavoura.webp";
+import HJ from "../assets/images/HJ.webp";
 
 export const newProjects = [
+  
   {
     id: 1,
+    title: "BlogMe",
+    description: "BlogMe is a feature-rich blogging platform that enables users to create, publish, and manage content efficiently. It provides a seamless user experience with intuitive content management tools and a modern, responsive design.",
+    fullDescription: "BlogMe is a comprehensive blog management system designed to offer full CRUD (Create, Read, Update, Delete) functionality for blog posts. Users can create engaging blog content with a rich text editor, categorize posts, and upload images. The platform includes advanced filtering by author and category, along with a search feature by title to enhance content discoverability. It ensures security with JWT Authorization for secure user registration and login, protecting user data in a multi-user environment.",
+    category: "web apps",
+    coverImage: "https://www.teledataict.com/media/2022/02/blog_online_business.jpg",
+    techStack: ["React", "ASP.Net", "Tailwind CSS", "MS SQL"],
+    features: [
+      "Rich text editor",
+      "Full CRUD functionality for blog posts",
+      "Advanced filtering by author and category",
+      "Search functionality by blog title",
+      "File upload support for blog images",
+      "Content management system",
+      "User authentication with JWT Authorization",
+      "Secure user registration and login",
+      "Responsive design"
+    ],
+    githubLink: "https://github.com/your-repo",
+    demoLink: "https://drive.google.com/file/d/1g5VESafAJefE-dbhKbuAh5sxkTIS19qp/view?usp=sharing"
+  },
+
+  {
+    id: 2,
     title: "TalentFolio",
     description: "The Resume Management System with a job portal streamlines candidate company interactions.",
     fullDescription: "TalentFolio is a powerful Resume Management System integrated with a job portal, designed to streamline interactions between candidates and companies. This platform offers a centralized hub for job postings, applications, and professional profiles, making the hiring process more efficient and user-friendly.",
@@ -24,8 +51,9 @@ export const newProjects = [
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com"
   },
+
   {
-    id: 2,
+    id: 3,
     title: "MindTalk",
     description: "Web application that acts as a portal for people with depression and counsellors to pave their way to a better mental health state.",
     fullDescription: "MindTalk is a web application designed to bridge the gap between individuals struggling with depression and qualified counselors. The platform provides a secure and supportive environment where users can seek professional help, access mental health resources, and track their progress toward emotional well-being.",
@@ -47,8 +75,9 @@ export const newProjects = [
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com"
   },
+
   {
-    id: 3,
+    id: 4,
     title: "Stadia",
     description: "The application streamlines indoor stadium bookings, facilitating coordination between clients, coaches, managers, and suppliers.",
     fullDescription: "Stadia is a comprehensive application designed to simplify the process of booking indoor stadiums. It creates a streamlined coordination system between various stakeholders, including clients, coaches, facility managers, and equipment suppliers. The platform allows users to register as players or coaches, book courts and training sessions, rent sports equipment, order refreshments, and even conduct or join training classes. With its intuitive booking and management features, Stadia ensures a seamless experience for all users involved in sports facility operations.",
@@ -72,29 +101,6 @@ export const newProjects = [
   },
 
   {
-    id: 4,
-    title: "BlogMe",
-    description: "BlogMe is a feature-rich blogging platform that enables users to create, publish, and manage content efficiently. It provides a seamless user experience with intuitive content management tools and a modern, responsive design.",
-    fullDescription: "BlogMe is a comprehensive blog management system designed to offer full CRUD (Create, Read, Update, Delete) functionality for blog posts. Users can create engaging blog content with a rich text editor, categorize posts, and upload images. The platform includes advanced filtering by author and category, along with a search feature by title to enhance content discoverability. It ensures security with JWT Authorization for secure user registration and login, protecting user data in a multi-user environment.",
-    category: "web apps",
-    coverImage: "https://www.teledataict.com/media/2022/02/blog_online_business.jpg",
-    techStack: ["React", "ASP.Net", "Tailwind CSS", "MS SQL"],
-    features: [
-      "Rich text editor",
-      "Full CRUD functionality for blog posts",
-      "Advanced filtering by author and category",
-      "Search functionality by blog title",
-      "File upload support for blog images",
-      "Content management system",
-      "User authentication with JWT Authorization",
-      "Secure user registration and login",
-      "Responsive design"
-    ],
-    githubLink: "https://github.com/your-repo",
-    demoLink: "https://your-demo.com"
-  },
-  
-  {
     id: 5,
     title: "Portfolio",
     description: "A portfolio website showcases the works, skills, and achievements, providing a professional online presence to impress potential employers or clients.",
@@ -110,8 +116,9 @@ export const newProjects = [
       "Modern UI/UX"
     ],
     githubLink: "https://github.com/your-repo",
-    demoLink: "https://www.pathumld.me/"
+    demoLink: "https://drive.google.com/file/d/1ZGHvkiK91MJGj-28i-Ys9yVZtVT4khLA/view?usp=sharing"
   },
+
   {
     id: 6,
     title: "TalkyBudies",
@@ -130,6 +137,7 @@ export const newProjects = [
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com"
   },
+
   {
     id: 7,
     title: "Student Management System",
@@ -145,6 +153,7 @@ export const newProjects = [
     githubLink: "https://github.com/your-repo",
     demoLink: "https://your-demo.com"
   },
+
   {
     id: 8,
     title: "Logo for KodeMargin",
@@ -152,7 +161,7 @@ export const newProjects = [
     fullDescription: "This logo was designed for KodeMargin, a startup company specializing in software development and graphic design services. The logo was crafted to reflect the company's brand identity, combining elements that represent both technical expertise and creative design capabilities.",
     category: "logo",
     coverImage: logo1, // Note: This would need to be updated with proper import
-    techStack: ["Adobe Illustrator"],
+    techStack: ["Adobe Illustrator", "Canva"],
     features: [
       "Custom typography",
       "Unique brand symbol",
@@ -161,15 +170,16 @@ export const newProjects = [
       "Multiple format variations"
     ],
     githubLink: "https://github.com/your-repo",
-    demoLink: "https://your-demo.com"
+    demoLink: "https://www.behance.net/gallery/225445215/KodeMargin-Logo"
   },
+
   {
     "id": 9,
     "title": "Business Website for ParkWay Hotel",
     "description": "A professional business website developed for ParkWay Hotel using modern web technologies.",
     "fullDescription": "This business website was designed and developed for ParkWay Hotel to enhance its online presence. Built using React and Tailwind CSS, the website ensures a responsive, user-friendly experience with a sleek and elegant design that aligns with the hotel's branding.",
     "category": "business-website",
-    "coverImage": "parkwayWebsiteCover", // Note: This should be updated with the correct import
+    "coverImage": PW, // Note: This should be updated with the correct import
     "techStack": ["React", "Tailwind CSS"],
     "features": [
       "Responsive and mobile-friendly design",
@@ -179,8 +189,9 @@ export const newProjects = [
       "SEO-friendly structure"
     ],
     "githubLink": "https://github.com/your-repo",
-    "demoLink": "https://your-demo.com"
+    "demoLink": "https://drive.google.com/file/d/1kOG78fhVcbLnJYvraXTdn6biEAq2dusS/view?usp=sharing"
 },
+
 {
   id: 10,
   title: "Social Media Post",
@@ -200,13 +211,14 @@ export const newProjects = [
   githubLink: "",
   demoLink: "https://www.behance.net/gallery/224818379/Social-Media-Post-Design"
 },
+
 {
   id: 11,
   title: "Flavoura Restaurant Website",
   description: "A modern restaurant website designed for Flavoura, featuring a complete menu, online reservations, and more.",
   fullDescription: "The Flavoura restaurant website is a fully responsive and visually appealing platform built to represent a contemporary dining experience. Developed using modern web technologies, it includes a full digital menu with categorization (mains, snacks, beverages, desserts), a table reservation system, contact and location details with Google Maps integration, and a smooth, user-friendly interface. The design emphasizes brand identity and ease of use to enhance customer engagement and drive online reservations.",
   category: "websites",
-  coverImage: "FlavouraWebsiteCover",
+  coverImage: FL,
   techStack: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   features: [
     "Fully responsive modern UI/UX",
@@ -218,8 +230,30 @@ export const newProjects = [
     "Brand-focused design with custom visuals"
   ],
   githubLink: "https://github.com/yourusername/flavoura-restaurant",
-  demoLink: "https://flavoura-restaurant.vercel.app/"
+  demoLink: "https://drive.google.com/file/d/1OVWdkLXV3ZrOHcwKzTjFhWIDJe4hK4dh/view?usp=sharing"
+},
+
+{
+  id: 12,
+  title: "HillSide Journey Travel Website",
+  description: "A feature-rich travel agency website designed for HillSide Journey, showcasing travel packages, gallery, and booking functionality.",
+  fullDescription: "The HillSide Journey website is a dynamic travel agency platform crafted to attract adventure seekers and tourists. The site offers detailed travel packages with itineraries, prices, and highlights. It includes a visually rich gallery section, customer testimonials, and an integrated booking system. Designed with a mobile-first approach, the site combines aesthetic appeal with usability, making it easy for visitors to explore destinations, view real images, and make bookings with ease.",
+  category: "websites",
+  coverImage: HJ,
+  techStack: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  features: [
+    "Responsive and engaging travel agency design",
+    "Complete travel packages with pricing and itinerary",
+    "Interactive image gallery showcasing destinations",
+    "Online booking form with validation",
+    "Customer testimonial section for trust-building",
+    "Smooth scroll and animations with Framer Motion",
+    "Search engine optimized and fast-loading"
+  ],
+  githubLink: "https://github.com/yourusername/hillside-journey",
+  demoLink: "https://drive.google.com/file/d/1jhCGm0GOqHqLc5OCRCrY649r-vSPeAWr/view?usp=sharing"
 }
+
 
 
 

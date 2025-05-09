@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectCard = ({ coverImage, title, description, techStack, githubLink, demoLink }) => {
   return (
-    <div className="relative w-full overflow-hidden transition-all duration-300 border shadow-lg group h-80 rounded-xl bg-neutral-900 border-neutral-800 hover:shadow-neutral-800/50 hover:border-neutral-700">
+    <div className="relative w-full overflow-hidden transition-all duration-300 border shadow-lg h-72 group rounded-xl bg-neutral-900 border-neutral-800 hover:shadow-neutral-800/50 hover:border-neutral-700">
       {/* Background image with subtle zoom effect */}
       <div 
         className="absolute inset-0 transition-transform duration-500 bg-center bg-cover group-hover:scale-105 opacity-70"
@@ -10,13 +10,13 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
       />
       
       {/* Dark overlay that lightens on hover */}
-      <div className="absolute inset-0 transition-all duration-300 bg-black/80 group-hover:bg-black/70" />
+      <div className="absolute inset-0 transition-all duration-300 bg-black/50 group-hover:bg-black/40" />
       
       {/* Content container */}
       <div className="relative z-10 flex flex-col h-full p-6 text-white">
         {/* Top section with title and description (always visible) */}
         <div>
-          <h2 className="mb-3 text-2xl font-bold text-white transition-colors duration-300 group-hover:text-cyan-400">
+          <h2 className="mb-5 text-2xl font-bold text-white transition-colors duration-300 group-hover:text-cyan-400">
             {title}
           </h2>
           
@@ -40,7 +40,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
         </div>
 
         {/* Bottom section with buttons */}
-        <div className="flex items-center justify-between pt-3 mt-auto border-t border-neutral-800">
+        {/* <div className="flex items-center justify-between pt-3 mt-auto border-t border-neutral-800">
           <div className="flex gap-2">
             {githubLink && (
               <a 
@@ -73,11 +73,11 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
             )}
           </div>
           
-          {/* Optional view more indicator */}
+          
           <span className="text-xs transition-colors duration-300 text-neutral-400 group-hover:text-cyan-400">
             View project →
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

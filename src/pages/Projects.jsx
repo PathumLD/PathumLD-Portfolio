@@ -194,8 +194,8 @@ const Projects = () => {
                   )}
 
                   {/* Links */}
-                  {/* <div className="flex flex-wrap gap-3 pt-4">
-                    {selectedProject.githubLink && (
+                  <div className="flex flex-wrap gap-3 pt-4">
+                    {/* {selectedProject.githubLink && (
                       <a
                         href={selectedProject.githubLink}
                         target="_blank"
@@ -205,19 +205,23 @@ const Projects = () => {
                       >
                         GitHub
                       </a>
-                    )}
+                    )} */}
                     {selectedProject.demoLink && (
                       <a
                         href={selectedProject.demoLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-5 py-2 text-sm text-white transition-colors rounded-full bg-cyan-600 hover:bg-cyan-500"
+                        className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-white transition-all duration-300 rounded-md bg-cyan-600/90 hover:bg-cyan-500 hover:shadow-md hover:shadow-cyan-500/20"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        Visit Site
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                        View Demo
                       </a>
                     )}
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </motion.div>
