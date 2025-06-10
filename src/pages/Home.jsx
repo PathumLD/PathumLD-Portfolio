@@ -118,7 +118,7 @@ const Home = () => {
               <a href="https://medium.com/@pathumld" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'> <FaMediumM /></a>
               <a href="https://www.behance.net/pathumld" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaBehance/></a>
             </div>
-            <a href="/cv/PathumDissanayake_SoftwareEngineer.pdf" download>
+            <a href="/PathumDissanayake_SoftwareEngineer.pdf" download>
               <button className="mt-4 px-2.5 py-2.5 md:px-3 md:py-1.5 text-white rounded-3xl border  hover:border-cyan-400 shadow-lg transition duration-500 hover:-translate-y-2 hover:bg-cyan-400 hover:text-white hover:font-semibold">
                 {/* Display text on large screens */}
                 <span className="hidden lg:block">Download CV</span>
