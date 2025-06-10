@@ -199,7 +199,7 @@ export const newProjects = [
   fullDescription: "This social media graphic was designed using Adobe Photoshop to promote an educational session titled 'Tharuru Ha Sanhivedana Thakshanaya' for Grade 10 and 11 students. The design includes fantasy-themed background visuals, clear Sinhala typography, session details with time slots, and event branding, all optimized for high engagement on Instagram. It balances visual appeal and clarity to effectively communicate the event information to the target audience.",
   category: "graphic design",
   coverImage: SMP1,
-  techStack: ["Adobe Photoshop"],
+  techStack: ["Adobe Photoshop", "Canva"],
   features: [
     "Designed for social media",
     "Clear Sinhala typography and event details",
