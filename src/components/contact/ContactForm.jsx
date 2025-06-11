@@ -27,7 +27,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     toast.info('Submitting...', {
-      position: toast.POSITION.TOP_RIGHT,
+      position: "top-right",
       autoClose: 3000,
     });
 
@@ -38,7 +38,7 @@ const ContactForm = () => {
       .then(
         () => {
           toast.success('Email sent successfully!', {
-            position: toast.POSITION.TOP_RIGHT,
+            position: "top-right",
             autoClose: 3000,
           });
           setFormData({
@@ -51,7 +51,7 @@ const ContactForm = () => {
         },
         () => {
           toast.error('Failed to send email.', {
-            position: toast.POSITION.TOP_RIGHT,
+            position: "top-right",
             autoClose: 3000,
           });
         },
@@ -68,7 +68,7 @@ const ContactForm = () => {
                 Get in <span className='text-white'>Touch</span>
               </h2>
               <p className="text-gray-400">
-                Share your vision and I'll help bring it to life
+                Share your vision and I&#39;ll help bring it to life
               </p>
             </div>
 
