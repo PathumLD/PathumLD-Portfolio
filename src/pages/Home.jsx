@@ -49,11 +49,11 @@ const Home = () => {
   }, []);
 
   return (
-    <section id='home' className="flex items-center justify-center h-screen p-6 sm:p-12 md:p-20 bg-slate-950">
-      <div className="container flex flex-col items-center justify-center max-w-5xl gap-8 mx-auto mt-8 md:flex-row md:gap-28 md:mt-24 ">
+    <section id='home' className="flex justify-center items-center p-6 h-screen sm:p-12 md:p-20 bg-slate-950">
+      <div className="container flex flex-col gap-8 justify-center items-center mx-auto mt-8 max-w-5xl md:flex-row md:gap-28 md:mt-24">
         
         {/* Left Div: Profile Image */}
-        <div className="relative flex justify-center md:justify-end left-div">
+        <div className="flex relative justify-center md:justify-end left-div">
           <div className="relative">
             {/* Responsive SVG Dotted Border */}
             <svg
@@ -83,9 +83,9 @@ const Home = () => {
 
         {/* Right Div: Text and Typewriter */}
         <div className="flex-1 text-center roadmap-item md:text-left right-div">
-          <h1 className="text-2xl text-white md:text-4xl ">Hello, I&rsquo;m</h1>
-          <h1 className="-ml-1 text-4xl font-bold md:text-6xl text-cyan-400">Pathum Dissanayake</h1>
-          <div className="flex items-center justify-center mt-3 text-2xl text-blue-400 md:text-4xl md:justify-start">
+          <h1 className="text-2xl text-white md:text-4xl">Hello, I&rsquo;m</h1>
+          <h1 className="-ml-1 text-4xl font-bold text-cyan-400 md:text-6xl">Pathum Dissanayake</h1>
+          <div className="flex justify-center items-center mt-3 text-2xl text-blue-400 md:text-4xl md:justify-start">
             <h2 className="inline-flex items-center text-lg text-white md:text-3xl">
                and I&rsquo;m a&nbsp; {/* Ensures the "I'm" stays on the same line */}
               <span className='inline-block text-cyan-400'>
@@ -109,14 +109,14 @@ const Home = () => {
             </h2>
           </div>
           <p className="mx-2 mt-2 text-sm text-justify text-white md:text-xl md:mx-auto md:mt-8">Turning complex problems into elegant solutions.</p>
-          <div className='flex items-center justify-center gap-4 mt-4 lg:justify-start'>
-            <div className='flex gap-4 mt-4 text-xl text-white '>
-              <a href="https://www.linkedin.com/in/pathumld/" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaLinkedinIn /></a>
-              <a href="https://github.com/PathumLD" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaGithub /></a>
-              <a href="mailto:pathumlk.diz@gmail.com" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><AiOutlineMail /></a>
-              <a href="https://wa.me/+94729997763" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaWhatsapp /></a>
-              <a href="https://medium.com/@pathumld" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'> <FaMediumM /></a>
-              <a href="https://www.behance.net/pathumld" className='p-2 transition duration-500 border rounded-full hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaBehance/></a>
+          <div className='flex gap-4 justify-center items-center mt-4 lg:justify-start'>
+            <div className='flex gap-4 mt-4 text-xl text-white'>
+              <a href="https://www.linkedin.com/in/pathumld/" className='p-2 rounded-full border transition duration-500 hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaLinkedinIn /></a>
+              <a href="https://github.com/PathumLD" className='p-2 rounded-full border transition duration-500 hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaGithub /></a>
+              <a href="mailto:pathumlk.diz@gmail.com" className='p-2 rounded-full border transition duration-500 hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><AiOutlineMail /></a>
+              <a href="https://wa.me/+94729997763" className='p-2 rounded-full border transition duration-500 hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaWhatsapp /></a>
+              <a href="https://medium.com/@pathumld" className='p-2 rounded-full border transition duration-500 hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'> <FaMediumM /></a>
+              <a href="https://www.behance.net/pathumld" className='p-2 rounded-full border transition duration-500 hover:border-cyan-400 hover:-translate-y-2 hover:bg-cyan-400 hover:text-stone-800'><FaBehance/></a>
             </div>
             <a href="/cv/Pathum_Dissanayake-Software_Engineer.pdf" download>
               <button className="mt-4 px-2.5 py-2.5 md:px-3 md:py-1.5 text-white rounded-3xl border  hover:border-cyan-400 shadow-lg transition duration-500 hover:-translate-y-2 hover:bg-cyan-400 hover:text-white hover:font-semibold">

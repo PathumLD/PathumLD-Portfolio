@@ -62,7 +62,7 @@ function App() {
       {/* Display the "Back to Home" button when navbar is hidden */}
       {!showNavbar && (
         <button
-          className="fixed z-50 px-4 py-4 text-white bg-blue-600 rounded-full shadow lg bottom-10 right-10 hover:bg-blue-500"
+          className="fixed right-10 bottom-10 z-50 px-4 py-4 text-white bg-blue-600 rounded-full shadow lg hover:bg-blue-500"
           onClick={scrollToHome}
         >
           <FaArrowUp />

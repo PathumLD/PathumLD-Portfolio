@@ -2,18 +2,18 @@ import React from 'react';
 
 const ProjectCard = ({ coverImage, title, description, techStack, githubLink, demoLink }) => {
   return (
-    <div className="relative w-full overflow-hidden transition-all duration-300 border shadow-lg h-72 group rounded-xl bg-neutral-900 border-neutral-800 hover:shadow-neutral-800/50 hover:border-neutral-700">
+    <div className="overflow-hidden relative w-full h-72 rounded-xl border shadow-lg transition-all duration-300 group bg-neutral-900 border-neutral-800 hover:shadow-neutral-800/50 hover:border-neutral-700">
       {/* Background image with subtle zoom effect */}
       <div 
-        className="absolute inset-0 transition-transform duration-500 bg-center bg-cover group-hover:scale-105 opacity-70"
+        className="absolute inset-0 bg-center bg-cover opacity-70 transition-transform duration-500 group-hover:scale-105"
         style={{ backgroundImage: `url(${coverImage})` }}
       />
       
       {/* Dark overlay that lightens on hover */}
-      <div className="absolute inset-0 transition-all duration-300 bg-black/50 group-hover:bg-black/40" />
+      <div className="absolute inset-0 transition-all duration-300 bg-black/80 group-hover:bg-black/40" />
       
       {/* Content container */}
-      <div className="relative z-10 flex flex-col h-full p-6 text-white">
+      <div className="flex relative z-10 flex-col p-6 h-full text-white">
         {/* Top section with title and description (always visible) */}
         <div>
           <h2 className="mb-5 text-2xl font-bold text-white transition-colors duration-300 group-hover:text-cyan-400">
@@ -31,7 +31,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
             {techStack.map((tech, index) => (
               <span 
                 key={index} 
-                className="px-3 py-1 text-xs font-medium transition-all duration-300 border rounded-md bg-neutral-800/80 text-cyan-400 border-neutral-700 hover:bg-neutral-700 hover:border-cyan-400/30"
+                className="px-3 py-1 text-xs font-medium text-cyan-400 rounded-md border transition-all duration-300 bg-neutral-800/80 border-neutral-700 hover:bg-neutral-700 hover:border-cyan-400/30"
               >
                 {tech}
               </span>
@@ -40,14 +40,14 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
         </div>
 
         {/* Bottom section with buttons */}
-        {/* <div className="flex items-center justify-between pt-3 mt-auto border-t border-neutral-800">
+        {/* <div className="flex justify-between items-center pt-3 mt-auto border-t border-neutral-800">
           <div className="flex gap-2">
             {githubLink && (
               <a 
                 href={githubLink} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="inline-flex items-center gap-1 px-3 py-2 text-xs font-medium text-white transition-all duration-300 border rounded-md bg-neutral-800/60 border-neutral-700 hover:bg-neutral-700 hover:text-cyan-400"
+                className="inline-flex gap-1 items-center px-3 py-2 text-xs font-medium text-white rounded-md border transition-all duration-300 bg-neutral-800/60 border-neutral-700 hover:bg-neutral-700 hover:text-cyan-400"
                 aria-label="GitHub repository"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -61,7 +61,7 @@ const ProjectCard = ({ coverImage, title, description, techStack, githubLink, de
                 href={demoLink} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="inline-flex items-center gap-1 px-3 py-2 text-xs font-medium text-white transition-all duration-300 rounded-md bg-cyan-600/90 hover:bg-cyan-500 hover:shadow-md hover:shadow-cyan-500/20"
+                className="inline-flex gap-1 items-center px-3 py-2 text-xs font-medium text-white rounded-md transition-all duration-300 bg-cyan-600/90 hover:bg-cyan-500 hover:shadow-md hover:shadow-cyan-500/20"
                 aria-label="Live demo"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
